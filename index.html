@@ -1,0 +1,613 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Craft Selling Website</title>
+    <!-- fontAwosome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.1.0/css/v4-shims.min.css"
+        integrity="sha512-p++g4gkFY8DBqLItjIfuKJPFvTPqcg2FzOns2BNaltwoCOrXMqRIOqgWqWEvuqsj/3aVdgoEo2Y7X6SomTfUPA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- CDN -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+    <!-- Tailwind -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+
+<body>
+    <!-- Banner -->
+    <div class="bg-blue-700 md:h-150 sm:h-1/2 "
+        style="background-image: url(https://images.pexels.com/photos/7898409/pexels-photo-7898409.jpeg); background-size: cover;">
+        <!-- Navbar -->
+        <nav class=" bg-white border-gray-200 dark:bg-gray-600">
+            <div class="flex flex-wrap justify-between items-center mx-auto max-w-screen-xl p-3">
+                <a href="https://flowbite.com" class="flex items-center space-x-3 rtl:space-x-reverse">
+                    <img src="./Images/craft-logo.png" class="h-8 m-0 rounded-full" alt="Flowbite Logo" />
+                    <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white px-4">The Craft
+                        Corner</span>
+                </a>
+                <div class="flex items-center space-x-6 rtl:space-x-reverse">
+                    <a href="tel:5541251234" class="text-sm  text-gray-500 dark:text-white hover:underline">(555)
+                        412-1234</a>
+                    <a href="#" class="text-sm  text-blue-600 dark:text-blue-500 hover:underline">Login</a>
+                </div>
+            </div>
+        </nav>
+        <nav class=" bg-gray-50 dark:bg-gray-700">
+            <div class="max-w-screen-xl px-4 py-3 mx-auto">
+                <div class="flex items-center">
+                    <ul class="flex flex-row font-medium mt-0 space-x-8 rtl:space-x-reverse text-sm">
+                        <li>
+                            <a href="#" class="text-gray-900 dark:text-white hover:underline"
+                                aria-current="page">Home</a>
+                        </li>
+                        <li>
+                            <a href="#" class="text-gray-900 dark:text-white hover:underline">Product</a>
+                        </li>
+                        <li>
+                            <a href="#" class="text-gray-900 dark:text-white hover:underline">About Us</a>
+                        </li>
+                        <li>
+                            <a href="#" class="text-gray-900 dark:text-white hover:underline">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- Navbar Ends -->
+            <div class="md:pt-40 sm:pt-20 ">
+                <h1
+                    class="mb-4 text-4xl font-extrabold leading-none tracking-tight text-gray-900 md:text-5xl lg:text-6xl dark:text-white px-16">
+                    Crafted with Love, Made for You</h1>
+                <p class="mb-6 text-lg font-normal text-gray-500 lg:text-xl sm:px-16 xl:px-16 dark:text-gray-400">
+                    Discover unique handmade creations that bring beauty, tradition, and artistry into your home.</p>
+                <div class="flex flex-col space-y-4 sm:flex-row sm:justify-right sm:space-y-0 sm:px-16 xl:px-16">
+                    <a href="#"
+                        class="inline-flex  py-2 px-6 text-base font-medium  text-white rounded-lg bg-lime-600 hover:bg-lime-500 focus:ring-4 focus:ring-lime-600 dark:focus:ring-lime-600 ">
+                        Contact Us
+
+                    </a>
+                    <a href="#"
+                        class="inline-flex justify-center hover:text-gray-900 items-center py-2 px-5 sm:ms-4 text-base font-medium text-center text-white rounded-lg border border-white hover:bg-gray-100 focus:ring-4 focus:ring-gray-400 offcanva-p">
+                        Learn more
+                    </a>
+
+                </div>
+                <!-- Rating -->
+
+                <div class="flex items-center pl-11 sm:px-16 xl:px-16 pt-5">
+                    <svg class="w-4 h-4 text-yellow-300 me-1" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                        fill="currentColor" viewBox="0 0 22 20">
+                        <path
+                            d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z" />
+                    </svg>
+                    <svg class="w-4 h-4 text-yellow-300 me-1" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                        fill="currentColor" viewBox="0 0 22 20">
+                        <path
+                            d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z" />
+                    </svg>
+                    <svg class="w-4 h-4 text-yellow-300 me-1" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                        fill="currentColor" viewBox="0 0 22 20">
+                        <path
+                            d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z" />
+                    </svg>
+                    <svg class="w-4 h-4 text-yellow-300 me-1" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                        fill="currentColor" viewBox="0 0 22 20">
+                        <path
+                            d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z" />
+                    </svg>
+                    <svg class="w-4 h-4 text-yellow-300 me-1" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                        fill="currentColor" viewBox="0 0 22 20">
+                        <path
+                            d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z" />
+                    </svg>
+                    <p class="ms-1 md:text-lg text-sm font-extrabold text-gray-950 dark:text-white">4.8/5</p>
+                    <p class="ms-1 ms:text-lg text-sm font-extrabold text-gray-800 dark:text-white ">Rating</p>
+
+                </div>
+                <!-- Rating-ends -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Grid 1 -->
+
+
+    <div class="grid gap-4 px-16 !pt-7">
+        <div>
+
+            <h1 class="mb-4 sm:text-3xl font-extrabold text-gray-900 dark:text-white md:text-4xl lg:text-5xl"><span
+                    class="text-transparent bg-clip-text bg-gradient-to-r to-emerald-600 from-sky-400">Discover our best
+                    of summer 2025</span></h1>
+            <p class="text-lg font-normal text-gray-500 lg:text-xl dark:text-gray-400">Here at Flowbite we focus on
+                markets where technology, innovation, and capital can unlock long-term value and drive economic growth.
+            </p>
+
+        </div>
+        <div class=" grid lg:grid-cols-6 grid-cols-2 gap-4 ">
+            <div
+                class="max-w-xs mx-auto bg-white rounded-2xl shadow-md overflow-hidden hover:shadow-xl hover:bg-gray-50 transition-all duration-300 p-3">
+                <div class="flex flex-col items-center">
+                    <!-- Image -->
+                    <img class="w-full h-40 object-cover rounded-lg"
+                        src="https://images.pexels.com/photos/4219654/pexels-photo-4219654.jpeg" alt="New Arrivals">
+
+                    <!-- Title -->
+                    <h1 class="text-center font-semibold text-lg pt-3">New Arrivals</h1>
+
+                    <!-- Button (appears on hover) -->
+                    <div class="relative group mt-3">
+                        <button type="button"
+                            class="opacity-90 group-hover:opacity-100 transition-opacity duration-300 flex justify-center items-center text-white bg-lime-500 hover:bg-blue-700  focus:outline-none focus:ring-blue-500 font-medium  text-sm  dark:bg-transparent dark:hover:bg-transparent dark:focus:ring-blue-800">
+                            <img src="https://openclipart.org/image/2400px/svg_to_png/2210/kuba-arrow-button-set-2.png"
+                                alt="" width="30px">
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div
+                class="max-w-xs mx-auto bg-white rounded-2xl shadow-md overflow-hidden hover:shadow-xl hover:bg-gray-50 transition-all duration-300 p-3">
+                <div class="flex flex-col items-center">
+                    <!-- Image -->
+                    <img class="w-full h-40 object-cover rounded-lg"
+                        src="https://images.pexels.com/photos/711004/pexels-photo-711004.jpeg" alt="New Arrivals">
+
+                    <!-- Title -->
+                    <h1 class="text-center font-semibold text-lg pt-3">Top 100 Best Sellers</h1>
+
+                    <!-- Button (appears on hover) -->
+                    <div class="relative group mt-3">
+                        <button type="button"
+                            class="opacity-90 group-hover:opacity-100 transition-opacity duration-300 flex justify-center items-center text-white bg-lime-500 hover:bg-blue-700  focus:outline-none focus:ring-blue-500 font-medium  text-sm  dark:bg-transparent dark:hover:bg-transparent dark:focus:ring-blue-800">
+                            <img src="https://openclipart.org/image/2400px/svg_to_png/2210/kuba-arrow-button-set-2.png"
+                                alt="" width="30px">
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div
+                class="max-w-xs mx-auto bg-white rounded-2xl shadow-md overflow-hidden hover:shadow-xl hover:bg-gray-50 transition-all duration-300 p-3">
+                <div class="flex flex-col items-center">
+                    <!-- Image -->
+                    <img class="w-full h-40 object-cover rounded-lg"
+                        src="https://www.fashiondivadesign.com/wp-content/uploads/2013/04/Handmade-Jewelry-20-600x450.jpg"
+                        alt="New Arrivals">
+
+                    <!-- Title -->
+                    <h1 class="text-center font-semibold text-lg pt-3">Handmade Jewelry </h1>
+
+                    <!-- Button (appears on hover) -->
+                    <div class="relative group mt-3">
+                        <button type="button"
+                            class="opacity-90 group-hover:opacity-100 transition-opacity duration-300 flex justify-center items-center text-white bg-lime-500 hover:bg-blue-700  focus:outline-none focus:ring-blue-500 font-medium  text-sm  dark:bg-transparent dark:hover:bg-transparent dark:focus:ring-blue-800">
+                            <img src="https://openclipart.org/image/2400px/svg_to_png/2210/kuba-arrow-button-set-2.png"
+                                alt="" width="30px">
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div
+                class="max-w-xs mx-auto bg-white rounded-2xl shadow-md overflow-hidden hover:shadow-xl hover:bg-gray-50 transition-all duration-300 p-3">
+                <div class="flex flex-col items-center">
+                    <!-- Image -->
+                    <img class="w-full h-40 object-cover rounded-lg"
+                        src="https://images.pexels.com/photos/27021655/pexels-photo-27021655.jpeg">
+
+                    <!-- Title -->
+                    <h1 class="text-center font-semibold text-lg pt-3">Festive Specials</h1>
+
+                    <!-- Button (appears on hover) -->
+                    <div class="relative group mt-3">
+                        <button type="button"
+                            class="opacity-90 group-hover:opacity-100 transition-opacity duration-300 flex justify-center items-center text-white bg-lime-500 hover:bg-blue-700  focus:outline-none focus:ring-blue-500 font-medium  text-sm  dark:bg-transparent dark:hover:bg-transparent dark:focus:ring-blue-800">
+                            <img src="https://openclipart.org/image/2400px/svg_to_png/2210/kuba-arrow-button-set-2.png"
+                                alt="" width="30px">
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div
+                class="max-w-xs mx-auto bg-white rounded-2xl shadow-md overflow-hidden hover:shadow-xl hover:bg-gray-50 transition-all duration-300 p-3">
+                <div class="flex flex-col items-center">
+                    <!-- Image -->
+                    <img class="w-full h-40 object-cover rounded-lg"
+                        src="https://i.pinimg.com/originals/09/72/21/0972212608f9f13192b08b38a8f08d08.jpg"
+                        alt="New Arrivals">
+
+                    <!-- Title -->
+                    <h1 class="text-center font-semibold text-lg pt-3">Home & Living-Decor</h1>
+
+                    <!-- Button (appears on hover) -->
+                    <div class="relative group mt-3">
+                        <button type="button"
+                            class="opacity-90 group-hover:opacity-100 transition-opacity duration-300 flex justify-center items-center text-white bg-lime-500 hover:bg-blue-700  focus:outline-none focus:ring-blue-500 font-medium  text-sm  dark:bg-transparent dark:hover:bg-transparent dark:focus:ring-blue-800">
+                            <img src="https://openclipart.org/image/2400px/svg_to_png/2210/kuba-arrow-button-set-2.png"
+                                alt="" width="30px">
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div
+                class="max-w-xs mx-auto bg-white rounded-2xl shadow-md overflow-hidden hover:shadow-xl hover:bg-gray-50 transition-all duration-300 p-3">
+                <div class="flex flex-col items-center">
+                    <!-- Image -->
+                    <img class="w-full h-40 object-cover rounded-lg"
+                        src="https://images.pexels.com/photos/20819218/pexels-photo-20819218.jpeg" alt="New Arrivals">
+
+                    <!-- Title -->
+                    <h1 class="text-center font-semibold text-lg pt-3"> Exclusive Collections</h1>
+
+                    <!-- Button (appears on hover) -->
+                    <div class="relative group mt-3">
+                        <button type="button"
+                            class="opacity-90 group-hover:opacity-100 transition-opacity duration-300 flex justify-center items-center text-white bg-lime-500 hover:bg-blue-700  focus:outline-none focus:ring-blue-500 font-medium  text-sm  dark:bg-transparent dark:hover:bg-transparent dark:focus:ring-blue-800">
+                            <img src="https://openclipart.org/image/2400px/svg_to_png/2210/kuba-arrow-button-set-2.png"
+                                alt="" width="30px">
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Grid 1 Ends-->
+
+
+    <!-- categories  -->
+
+
+    <!-- Categories Section -->
+    <section class="py-12 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="flex flex-col lg:flex-row items-center gap-8">
+
+                <!-- Left Side (Title & Description) -->
+                <div class="lg:w-1/3 text-center lg:text-left">
+                    <h2 class="text-3xl font-bold mb-4">Shop by Categories</h2>
+                    <p class="text-gray-600">
+                        Explore a wide variety of handmade crafts – from jewelry and pottery to eco-friendly décor and
+                        festival specials.
+                    </p>
+                </div>
+
+                <!-- Right Side (Categories Grid) -->
+                <div class="lg:w-2/3 grid grid-cols-2 sm:grid-cols-3 gap-6">
+
+                    <!-- Category Card -->
+                    <div class="bg-white rounded-xl shadow hover:shadow-lg p-4 flex flex-col items-center">
+                        <img src="https://www.mugasilk.in/wp-content/uploads/2017/02/Handmade-Cane-and-Bamboo-Jewellery.jpeg"
+                            alt="Jewelry" class="w-20 h-20 object-cover rounded-full mb-3">
+                        <h3 class="font-semibold">Handmade Jewelry</h3>
+                    </div>
+
+                    <div class="bg-white rounded-xl shadow hover:shadow-lg p-4 flex flex-col items-center">
+                        <img src="https://cdn11.bigcommerce.com/s-x49po/images/stencil/590x590/products/53903/278295/1674878064573_P01_Devotion_Rev1_2430__73562.1687411491.jpg?c=2"
+                            alt="Paintings" class="w-20 h-20 object-cover rounded-full mb-3">
+                        <h3 class="font-semibold">Paintings</h3>
+                    </div>
+
+                    <div class="bg-white rounded-xl shadow hover:shadow-lg p-4 flex flex-col items-center">
+                        <img src="https://www.goodtimesdiy.my/wp-content/uploads/Untitled-design-2-1.png" alt="Pottery"
+                            class="w-20 h-20 object-cover rounded-full mb-3">
+                        <h3 class="font-semibold">Pottery</h3>
+                    </div>
+
+                    <div class="bg-white rounded-xl shadow hover:shadow-lg p-4 flex flex-col items-center">
+                        <img src="https://i0.wp.com/classadventuretravel.com/wp-content/uploads/2021/12/Peru-SV-weaving-scaled.jpg"
+                            alt="Textiles" class="w-20 h-20 object-cover rounded-full mb-3">
+                        <h3 class="font-semibold">Textiles</h3>
+                    </div>
+
+                    <div class="bg-white rounded-xl shadow hover:shadow-lg p-4 flex flex-col items-center">
+                        <img src="https://i.ytimg.com/vi/1pQg2Q5BVsk/maxresdefault.jpg" alt="Home Décor"
+                            class="w-20 h-20 object-cover rounded-full mb-3">
+                        <h3 class="font-semibold">Home Decor</h3>
+                    </div>
+
+                    <div class="bg-white rounded-xl shadow hover:shadow-lg p-4 flex flex-col items-center">
+                        <img src="https://nanani.world/wp-content/uploads/2022/06/Lantern-Festival.jpg"
+                            alt="Festival Crafts" class="w-20 h-20 object-cover rounded-full mb-3">
+                        <h3 class="font-semibold">Festival Crafts</h3>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- categories  ends -->
+
+    <!-- Categories Section -->
+    <section class="py-10 ">
+        <div class="max-w-7xl mx-auto px-3">
+            <h2 class="text-2xl font-bold text-white mb-8 text-left !text-black">Shop our most-loved categories</h2>
+
+            <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-6 gap-6">
+
+                <!-- Category Card -->
+                <div class="relative h-60 rounded-lg overflow-hidden group cursor-pointer">
+                    <!-- Background Image -->
+                    <div class="absolute inset-0 bg-cover bg-center group-hover:scale-105 transition-transform duration-300"
+                        style="background-image: url('https://i5.walmartimages.com/seo/KHOYIME-Macrame-Wall-Hanging-Boho-Woven-Tapestry-Chic-Home-Decor-Modern-Bohemian-Handmade-Leaf-Feather-Art-Decorations-Apartment-Dorm-Living-Room-Bed_7e3a1990-d46f-410e-8df2-444d35e86a77.7e893d54a8715b1ffe4d5ebb62228273.jpeg?odnHeight=768&odnWidth=768&odnBg=FFFFFF');">
+
+
+                        <!-- Text at Bottom -->
+                        <div class="absolute bottom-0 w-full text-center bg-black/10 py-2">
+                            <h2 class="text-white  font-semibold text-lg">Wall Hangings</h2>
+                        </div>
+                    </div>
+                </div>
+                 <div class="relative h-60 rounded-lg overflow-hidden group cursor-pointer">
+                    <!-- Background Image -->
+                    <div class="absolute inset-0 bg-cover bg-center group-hover:scale-105 transition-transform duration-300"
+                        style="background-image: url('https://tse3.mm.bing.net/th/id/OIP.Sp-h2bnE08i0mlCPrUGKHgAAAA?r=0&rs=1&pid=ImgDetMain&o=7&rm=3');">
+
+
+                        <!-- Text at Bottom -->
+                        <div class="absolute bottom-0 w-full text-center bg-black/10 py-2">
+                            <h2 class="text-white  font-semibold text-lg">Toys & Dolls</h2>
+                        </div>
+                    </div>
+                </div>
+
+                 <div class="relative h-60 rounded-lg overflow-hidden group cursor-pointer">
+                    <!-- Background Image -->
+                    <div class="absolute inset-0 bg-cover bg-center group-hover:scale-105 transition-transform duration-300"
+                                                    style="background-image: url('https://i.etsystatic.com/22312897/r/il/2cd795/3587601777/il_fullxfull.3587601777_o8vc.jpg');">
+
+
+                        <!-- Text at Bottom -->
+                        <div class="absolute bottom-0 w-full text-center bg-black/10 py-2">
+                            <h2 class="text-white  font-semibold text-lg" style="text-shadow: 1px 1px 1px black;">Baskets & Storage</h2>
+                        </div>
+                    </div>
+                </div>
+
+                 <div class="relative h-60 rounded-lg overflow-hidden group cursor-pointer">
+                    <!-- Background Image -->
+                    <div class="absolute inset-0 bg-cover bg-center group-hover:scale-105 transition-transform duration-300"
+                        style="background-image: url('https://i.etsystatic.com/18419276/r/il/2bf7ae/2846125485/il_fullxfull.2846125485_jdir.jpg');">
+
+
+                        <!-- Text at Bottom -->
+                        <div class="absolute bottom-0 w-full text-center bg-black/10 py-2">
+                            <h2 class="text-white  font-semibold text-lg">Cards & Paper Art</h2>
+                        </div>
+                    </div>
+                </div>
+
+                 <div class="relative h-60 rounded-lg overflow-hidden group cursor-pointer">
+                    <!-- Background Image -->
+                    <div class="absolute inset-0 bg-cover bg-center group-hover:scale-105 transition-transform duration-300"
+                        style="background-image: url('https://i.pinimg.com/originals/9c/8d/d5/9c8dd5eabbf0075f2a2fb5dd2ce0bf3b.jpg');">
+
+
+                        <!-- Text at Bottom -->
+                        <div class="absolute bottom-0 w-full text-center bg-black/10 py-2">
+                            <h2 class="text-white  font-semibold text-lg">Eco-Friendly Crafts</h2>
+                        </div>
+                    </div>
+                </div>
+                 <div class="relative h-60 rounded-lg overflow-hidden group cursor-pointer">
+                    <!-- Background Image -->
+                    <div class="absolute inset-0 bg-cover bg-center group-hover:scale-105 transition-transform duration-300"
+                        style="background-image: url('https://img.freepik.com/premium-photo/handmade-halloween-decorations-from-fabric_198639-20885.jpg');">
+
+
+                        <!-- Text at Bottom -->
+                        <div class="absolute bottom-0 w-full text-center bg-black/10 py-2">
+                            <h2 class="text-white  font-semibold text-lg">Decorations</h2>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+  
+
+
+<!-- Testimonials Section -->
+<section id="testimonials" class="bg-gray-500 dark:bg-gray-900 py-10">
+  <div class="max-w-screen-xl mx-auto px-4 text-center lg:px-8">
+    <h2 class="text-3xl font-extrabold text-gray-900 dark:text-white mb-10">What Our Customers Say</h2>
+    
+    <div class="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
+      
+      <!-- Testimonial Card 1 -->
+      <div class="bg-white dark:bg-gray-800 p-6 rounded-2xl shadow-md hover:shadow-lg transition">
+        <p class="text-gray-600 dark:text-gray-300  mb-4">
+          "Absolutely love the handmade baskets I ordered! The craftsmanship is outstanding and delivery was quick."
+        </p>
+        <div class="flex items-center justify-center gap-3">
+          <img class="w-12 h-12 rounded-full border" src="https://static.vecteezy.com/system/resources/previews/048/378/864/non_2x/a-young-happy-pretty-smiling-professional-business-woman-free-photo.jpg" alt="Customer 1">
+          <div class="text-left">
+            <h4 class="font-semibold text-gray-900 dark:text-white">Anjali Sharma</h4>
+            <span class="text-sm text-gray-500">Delhi, India</span>
+            <div class="flex">
+                <svg class="w-3 h-3 text-yellow-300 me-1" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                        fill="currentColor" viewBox="0 0 22 20">
+                        <path
+                            d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z" />
+                    </svg>
+                    <svg class="w-3 h-3 text-yellow-300 me-1" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                        fill="currentColor" viewBox="0 0 22 20">
+                        <path
+                            d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z" />
+                    </svg>
+                    <svg class="w-3 h-3 text-yellow-300 me-1" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                        fill="currentColor" viewBox="0 0 22 20">
+                        <path
+                            d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z" />
+                    </svg>
+                    <svg class="w-3 h-3 text-yellow-300 me-1" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                        fill="currentColor" viewBox="0 0 22 20">
+                        <path
+                            d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z" />
+                    </svg>
+                    <svg class="w-3 h-3 text-yellow-300 me-1" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                        fill="" viewBox="0 0 22 20">
+                        <path
+                            d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z" />
+                    </svg>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Testimonial Card 2 -->
+      <div class="bg-white dark:bg-gray-800 p-6 rounded-2xl shadow-md hover:shadow-lg transition">
+        <p class="text-gray-600 dark:text-gray-300  mb-4">
+          "Beautifully crafted decor items. They added such warmth to my living room. Highly recommended!"
+        </p>
+        <div class="flex items-center justify-center gap-3">
+          <img class="w-12 h-12 rounded-full border" src="https://tse2.mm.bing.net/th/id/OIP.cTUlXdj-0E-pLOZ9cFjMJgHaE7?r=0&rs=1&pid=ImgDetMain&o=7&rm=3" alt="Customer 2">
+          <div class="text-left">
+            <h4 class="font-semibold text-gray-900 dark:text-white"> Verma Rahul</h4>
+            <span class="text-sm text-gray-500">Mumbai, India</span>
+            <div class="flex">
+                <svg class="w-3 h-3 text-yellow-300 me-1" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                        fill="currentColor" viewBox="0 0 22 20">
+                        <path
+                            d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z" />
+                    </svg>
+                    <svg class="w-3 h-3 text-yellow-300 me-1" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                        fill="currentColor" viewBox="0 0 22 20">
+                        <path
+                            d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z" />
+                    </svg>
+                    <svg class="w-3 h-3 text-yellow-300 me-1" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                        fill="currentColor" viewBox="0 0 22 20">
+                        <path
+                            d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z" />
+                    </svg>
+                    <svg class="w-3 h-3 text-yellow-300 me-1" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                        fill="" viewBox="0 0 22 20">
+                        <path
+                            d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z" />
+                    </svg>
+                    <svg class="w-3 h-3 text-yellow-300 me-1" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                        fill="" viewBox="0 0 22 20">
+                        <path
+                            d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z" />
+                    </svg>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+
+      <!-- Testimonial Card 3 -->
+      <div class="bg-white dark:bg-gray-800 p-6 rounded-2xl shadow-md hover:shadow-lg transition">
+        <p class="text-gray-600 dark:text-gray-300  mb-4">
+          "Great customer service and unique handmade gifts. My friends loved them. Will buy again!"
+        </p>
+        <div class="flex items-center justify-center gap-3">
+          <img class="w-12 h-12 rounded-full border" src="https://img.freepik.com/free-photo/close-up-portrait-professional-business-woman-smiling-outdoor_1391-4.jpg?semt=ais_hybrid" alt="Customer 3">
+          <div class="text-left">
+            <h4 class="font-semibold text-gray-900 dark:text-white">Meera Iyer</h4>
+            <span class="text-sm text-gray-500">Kochi, India</span>
+            <div class="flex">
+                <svg class="w-3 h-3 text-yellow-300 me-1" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                        fill="currentColor" viewBox="0 0 22 20">
+                        <path
+                            d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z" />
+                    </svg>
+                    <svg class="w-3 h-3 text-yellow-300 me-1" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                        fill="currentColor" viewBox="0 0 22 20">
+                        <path
+                            d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z" />
+                    </svg>
+                    <svg class="w-3 h-3 text-yellow-300 me-1" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                        fill="currentColor" viewBox="0 0 22 20">
+                        <path
+                            d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z" />
+                    </svg>
+                    <svg class="w-3 h-3 text-yellow-300 me-1" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                        fill="currentColor" viewBox="0 0 22 20">
+                        <path
+                            d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z" />
+                    </svg>
+                    <svg class="w-3 h-3 text-yellow-300 me-1" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                        fill="" viewBox="0 0 22 20">
+                        <path
+                            d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z" />
+                    </svg>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<footer class="bg-gray-100 dark:bg-gray-900  shadow-sm ">
+  <div class="w-full max-w-screen-xl mx-auto p-6 md:py-8">
+    <!-- Top Section -->
+    <div class="sm:flex sm:items-center sm:justify-between">
+      <!-- Logo + Name -->
+      <a href="/" class="flex items-center mb-4 sm:mb-0 space-x-3 rtl:space-x-reverse">
+        <img src="/images/logo.png" class="h-10" alt="Craftify Logo" />
+        <span class="self-center text-2xl font-semibold text-gray-700 dark:text-white">Craftify</span>
+      </a>
+
+      <!-- Footer Links -->
+      <ul class="flex flex-wrap items-center mb-6 text-sm font-medium text-gray-600 dark:text-gray-400 sm:mb-0">
+        <li>
+          <a href="/about" class="hover:underline me-4 md:me-6">About Us</a>
+        </li>
+        <li>
+          <a href="/shop" class="hover:underline me-4 md:me-6">Shop</a>
+        </li>
+        <li>
+          <a href="/privacy" class="hover:underline me-4 md:me-6">Privacy Policy</a>
+        </li>
+        <li>
+          <a href="/contact" class="hover:underline">Contact</a>
+        </li>
+      </ul>
+    </div>
+
+    <!-- Divider -->
+    <hr class="my-6 border-gray-300 dark:border-gray-700 sm:mx-auto lg:my-8" />
+
+    <!-- Newsletter -->
+    <div class="text-center mb-6">
+      <h3 class="text-lg font-semibold text-gray-700 dark:text-white">Join Our Craft Community</h3>
+      <p class="text-sm text-gray-500 dark:text-gray-400 mb-4">Get exclusive offers & updates on new handmade products.</p>
+      <form class="flex justify-center">
+        <input type="email" placeholder="Enter your email"
+          class="px-4 py-2 w-64 rounded-l-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500" />
+        <button type="submit"
+          class="px-4 py-2 bg-blue-600 text-white rounded-r-lg hover:bg-blue-700">Subscribe</button>
+      </form>
+    </div>
+
+    <!-- Bottom -->
+    <span class="block text-sm text-gray-500 sm:text-center dark:text-gray-400">© 2025 <a href="/" class="hover:underline">Craftify™</a>. All Rights Reserved.</span>
+  </div>
+</footer>
+
+
+
+
+
+
+
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+</body>
+
+</html>
