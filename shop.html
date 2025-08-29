@@ -1,0 +1,1181 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Services | EliteMoments</title>
+  <link rel="icon" href="../Images/logoT.png">
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- GoogleFonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Anton&family=Archivo+Black&family=Barlow+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Bebas+Neue&family=Caveat:wght@400..700&family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Intel+One+Mono:ital,wght@0,300..700;1,300..700&family=Jost:ital,wght@0,100..900;1,100..900&family=Libertinus+Math&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Lilita+One&family=Poller+One&family=Raleway:ital,wght@0,100..900;1,100..900&family=Rammetto+One&family=Sevillana&display=swap"
+    rel="stylesheet">
+
+  <!-- CDN -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+
+  <!-- font awosome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
+    integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <!-- Custom CSS -->
+  <style>
+    /* Optional Google Font */
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
+
+    * {
+      font-family: "Winky Sans", sans-serif;
+    }
+
+    body {
+      font-family: 'Inter', sans-serif;
+    }
+
+
+
+    a {
+      transition: color 0.3s ease;
+    }
+
+    .card {
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .card:hover {
+      transform: scale(1.05);
+      /* Slight zoom in */
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+      /* Smooth shadow */
+    }
+
+    footer a:hover {
+      color: #c7d2fe;
+    }
+
+    @media (max-width: 640px) {
+      section {
+        padding-left: 1rem;
+        padding-right: 1rem;
+      }
+    }
+
+    /* Ensure the form is pushed below navbar */
+    form {
+      margin-top: 50px;
+      /* Adjust this based on navbar height */
+    }
+
+    /* Navigation links styling */
+    nav ul {
+      list-style: none;
+      display: flex;
+      justify-content: flex-end;
+      gap: 25px;
+      padding-right: 50px;
+    }
+
+    nav ul li a {
+      text-decoration: none;
+      color: black;
+    }
+
+    .ename {
+      font-family: "Poller One", sans-serif;
+    }
+
+    .enamesub {
+      font-family: "Caveat", cursive;
+    }
+
+    .offcan-items {
+      font-family: "Rammetto One", sans-serif;
+    }
+
+    footer li {
+      font-family: "Jost", sans-serif;
+    }
+
+    .offcanva-p {
+      font-family: "Jost", sans-serif;
+    }
+
+    .cardhover {
+      display: none;
+      /* hidden by default */
+      justify-content: center;
+      align-items: center;
+
+    }
+
+    .parent:hover .cardhover {
+      display: flex;
+      /* show on hover */
+    }
+  </style>
+</head>
+
+<body>
+  <header class="h-auto md:white">
+    <!-- Top Navbar -->
+    <nav class="bg-gray-100 dark:bg-gray-900 border-gray-200  shadow">
+      <div class="flex flex-wrap justify-between items-center mx-auto max-w-screen-xl p-3">
+        <!-- Logo -->
+        <a href="#" class="flex items-center space-x-3 rtl:space-x-reverse">
+          <img src="./Images/craft-logo.png" class="h-10 rounded-full" alt="Craft Logo" />
+          <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">
+            The Craft Corner
+          </span>
+        </a>
+        <!-- Right side links -->
+        <div class="flex items-center space-x-6 rtl:space-x-reverse">
+          <a href="tel:5541251234" class="text-sm text-gray-500 dark:text-white hover:underline">
+            (555) 412-1234
+          </a>
+          <a href="#" class="text-sm text-blue-600 dark:text-blue-400 hover:underline">
+            Login
+          </a>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Secondary Navbar -->
+    <nav class="bg-gray-50 dark:bg-gray-700 border-b">
+      <div class="max-w-screen-xl px-4 py-3 mx-auto">
+        <div class="flex items-center justify-center">
+          <ul class="flex flex-row font-medium mt-0 space-x-8 rtl:space-x-reverse text-sm">
+            <li>
+              <a href="./index.html" class="text-gray-900 dark:text-white hover:underline" aria-current="page">Home</a>
+            </li>
+            <li>
+              <a href="#" class="text-gray-900 dark:text-white hover:underline">Product</a>
+            </li>
+            <li>
+              <a href="#" class="text-gray-900 dark:text-white hover:underline">About Us</a>
+            </li>
+            <li>
+              <a href="#" class="text-gray-900 dark:text-white hover:underline">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Services Header -->
+    <div class="flex justify-end pl-20 pr-20 mt-0 mb-0">
+      <marquee class="text-red-900 text-sm md:font-bold p-2 rounded" behavior="scroll" direction="left" scrollamount="5"
+        loop="-1" width="600">
+        🚚 Free shipping on orders above ₹1000!
+      </marquee>
+    </div>
+    <div class="pb-5 pt-0 text-white   !font-medium sm:text-center md:text-left md:pl-36 px-10">
+      <h2 class="text-2xl md:text-5xl font-extrabold drop-shadow-[2px_2px_2px_black]">
+        Our Handmade Crafts
+      </h2>
+      <p class="mt-3 text-lg md:text-xl text-gray-200">
+        Browse our collection of unique, handmade creations
+      </p>
+
+    </div>
+  </header>
+
+
+  <!-- Categories Section -->
+  <div class="flex flex-col md:flex-row bg-white min-h-screen">
+
+    <!-- Side Image with overlay -->
+    <div class="relative md:w-1/3 h-64 md:h-auto overflow-hidden">
+
+      <div class="absolute inset-0   rounded-lg bg:contain bg-cover bg-center bg-no-repeat  bg-[url('https://images.pexels.com/photos/6956890/pexels-photo-6956890.jpeg')]">
+      
+      </div> 
+     
+      <!-- Overlay (opacity only affects background, not text) -->
+      <div class="flex justify-center items-center absolute inset-0 bg-black/30 text-white">
+        
+<div data-aos="fade-right">
+<div class="max-w-sm p-6 bg-white md:border md:border-gray-200 rounded-lg shadow-sm dark:bg-transparent dark:border-gray-700">
+
+  
+    <!-- Shopping Icon -->
+   <svg class="w-1 h-1 md:w-7 md:h-7 text-gray-500 dark:text-gray-400 mb-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
+        <path d="M18 5h-.7c.229-.467.349-.98.351-1.5a3.5 3.5 0 0 0-3.5-3.5c-1.717 0-3.215 1.2-4.331 2.481C8.4.842 6.949 0 5.5 0A3.5 3.5 0 0 0 2 3.5c.003.52.123 1.033.351 1.5H2a2 2 0 0 0-2 2v3a1 1 0 0 0 1 1h18a1 1 0 0 0 1-1V7a2 2 0 0 0-2-2ZM8.058 5H5.5a1.5 1.5 0 0 1 0-3c.9 0 2 .754 3.092 2.122-.219.337-.392.635-.534.878Zm6.1 0h-3.742c.933-1.368 2.371-3 3.739-3a1.5 1.5 0 0 1 0 3h.003ZM11 13H9v7h2v-7Zm-4 0H2v5a2 2 0 0 0 2 2h3v-7Zm6 0v7h3a2 2 0 0 0 2-2v-5h-5Z"/>
+    </svg>
+
+    <!-- Title -->
+    <a href="#">
+      <h5 class="mb-2 text-2xl font-semibold tracking-tight text-gray-900 dark:text-white">
+        Exciting Shopping Deals & Offers 🎉
+      </h5>
+    </a>
+
+    <!-- Description -->
+    <p class="justify-center mb-3 text-sm md:text-xl md:font-normal text-gray-100 dark:text-gray-100">
+      Discover amazing discounts on fashion, electronics, home essentials, and more. 
+      From limited-time flash sales to exclusive member rewards, we bring you the best prices every day. 
+      Don’t miss out on seasonal offers and special festival discounts curated just for you.
+    </p>
+
+    <!-- Call to Action -->
+    <a href="#" class="inline-flex font-medium items-center text-blue-600 hover:underline mb-5 mt-0">
+      Explore Offers
+      <button type="button" class="mx-5  text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-full text-sm p-2.5 text-center inline-flex items-center me-2 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+<svg class=" w-4 h-4" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
+<path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9"/>
+</svg>
+<span class="sr-only">Icon description</span>
+</button>
+    </a>
+  </div>
+
+</div>
+
+
+      </div>
+       
+      
+    </div>
+
+    <!-- Category List -->
+    <div class="md:w-2/3 flex justify-center items-center pt-0 px-1">
+      <div class="space-y-6 w-full max-w-4xl">
+
+        <!-- Handmade Jewelry -->
+         <div data-aos="zoom-in">  <div class="flex w-full  flex-col md:flex-row bg-gray-50 shadow rounded-lg overflow-hidden md:h-56">
+          <div class="md:w-full h-full grid md:grid-cols-4 grid-cols-2  gap-4 p-3">
+
+            <!-- Featured Background Image with Offer -->
+
+            <div class="card parent relative bg-[url('https://images.pexels.com/photos/3737577/pexels-photo-3737577.jpeg')] bg-cover bg-center rounded-lg flex items-end justify-between p-3">
+
+              <!-- Offer Badge -->
+              <span
+                class="absolute top-2 left-2 bg-red-600 text-white bg-opacity-60 text-xs font-bold px-2 py-1 rounded-lg shadow">
+                20% OFF
+              </span>
+
+              <!-- Price Info -->
+              <div class="bg-white bg-opacity-60 px-3 py-1 rounded-lg shadow text-center">
+                <p class="text-xs text-gray-500 line-through">$120.00</p>
+                <p class="text-green-600 font-bold">$79.99</p>
+              </div>
+              <button type="button" class="cardhover text-white bg-lime-500 rounded-lg p-1">
+                Buy now
+              </button>
+            </div>
+
+            <!-- Additional Product Images -->
+            <div
+              class="parent card relative bg-[url('https://tse4.mm.bing.net/th/id/OIP.ZWoYX01ZhLPkWQ1AE0sr_QAAAA?r=0&w=300&h=300&rs=1&pid=ImgDetMain&o=7&rm=3')] bg-cover bg-center rounded-lg flex items-end justify-between p-3">
+
+              <!-- Offer Badge -->
+              <span
+                class="absolute top-2 left-2 bg-red-600 text-white bg-opacity-60 text-xs font-bold px-2 py-1 rounded-lg shadow">
+                20% OFF
+              </span>
+
+              <!-- Price Info -->
+              <div class="bg-white bg-opacity-60 px-3 py-1 rounded-lg shadow text-center">
+                <p class="text-xs text-gray-500 line-through">$120.00</p>
+                <p class="text-green-600 font-bold">$79.99</p>
+              </div>
+              <button type="button" class="cardhover text-white bg-lime-500 rounded-lg p-1">
+                Buy now
+              </button>
+            </div>
+            <div
+              class="parent card relative bg-[url('https://i.etsystatic.com/15960951/r/il/2cee5f/3828494029/il_300x300.3828494029_jlnl.jpg')] bg-cover bg-center rounded-lg flex items-end justify-between p-3">
+
+              <!-- Offer Badge -->
+              <span
+                class="absolute top-2 left-2 bg-red-600 text-white bg-opacity-60 text-xs font-bold px-2 py-1 rounded-lg shadow">
+                20% OFF
+              </span>
+
+              <!-- Price Info -->
+              <div class="bg-white bg-opacity-60 px-3 py-1 rounded-lg shadow text-center">
+                <p class="text-xs text-gray-500 line-through">$120.00</p>
+                <p class="text-green-600 font-bold">$79.99</p>
+              </div>
+              <button type="button" class="cardhover text-white bg-lime-500 rounded-lg p-1">
+                Buy now
+              </button>
+            </div>
+            <div
+              class="parent card relative bg-[url('https://thumbs.dreamstime.com/b/set-clay-utensils-isolated-white-79988235.jpg')] bg-cover bg-center rounded-lg flex items-end justify-between p-3">
+
+              <!-- Offer Badge -->
+              <span
+                class="absolute top-2 left-2 bg-red-600 text-white bg-opacity-60 text-xs font-bold px-2 py-1 rounded-lg shadow">
+                20% OFF
+              </span>
+
+              <!-- Price Info -->
+              <div class="bg-white bg-opacity-60 px-3 py-1 rounded-lg shadow text-center">
+                <p class="text-xs text-gray-500 line-through">$120.00</p>
+                <p class="text-green-600 font-bold">$79.99</p>
+              </div>
+              <button type="button" class="cardhover text-white bg-lime-500 rounded-lg p-1">
+                Buy now
+              </button>
+            </div>
+
+          </div>
+        </div></div>
+       
+
+        <!-- Clay Pottery -->
+         <div data-aos="zoom-in">  <div class="flex w-full  flex-col md:flex-row bg-gray-50 shadow rounded-lg overflow-hidden md:h-56">
+          <div class="md:w-full h-full grid md:grid-cols-4 grid-cols-2  gap-4 p-3">
+
+            <!-- Featured Background Image with Offer -->
+
+            <div class="parent card relative bg-[url('https://allcrafts.life/wp-content/uploads/2024/02/Crochet-Rhea-Plant-Hanger-Pattern.jpg')] bg-cover bg-center rounded-lg flex items-end justify-between p-3">
+
+              <!-- Offer Badge -->
+              <span
+                class="absolute top-2 left-2 bg-red-600 text-white bg-opacity-60 text-xs font-bold px-2 py-1 rounded-lg shadow">
+                20% OFF
+              </span>
+
+              <!-- Price Info -->
+              <div class="bg-white bg-opacity-60 px-3 py-1 rounded-lg shadow text-center">
+                <p class="text-xs text-gray-500 line-through">$120.00</p>
+                <p class="text-green-600 font-bold">$79.99</p>
+              </div>
+              <button type="button" class="cardhover text-white bg-lime-500 rounded-lg p-1">
+                Buy now
+              </button>
+            </div>
+
+            <!-- Additional Product Images -->
+            <div
+              class="parent card relative bg-[url('https://cdn11.bigcommerce.com/s-sckh288/images/stencil/1280x1280/products/2361/8546/F1137F93-108B-42D2-B788-E028C639201F_1_201_a__43798.1593318400.jpg?c=2&imbypass=on')] bg-cover bg-center rounded-lg flex items-end justify-between p-3">
+
+              <!-- Offer Badge -->
+              <span
+                class="absolute top-2 left-2 bg-red-600 text-white bg-opacity-60 text-xs font-bold px-2 py-1 rounded-lg shadow">
+                20% OFF
+              </span>
+
+              <!-- Price Info -->
+              <div class="bg-white bg-opacity-60 px-3 py-1 rounded-lg shadow text-center">
+                <p class="text-xs text-gray-500 line-through">$120.00</p>
+                <p class="text-green-600 font-bold">$79.99</p>
+              </div>
+              <button type="button" class="cardhover text-white bg-lime-500 rounded-lg p-1">
+                Buy now
+              </button>
+            </div>
+            <div
+              class="parent card relative bg-[url('https://images1.novica.net/pictures/15/p264341_2a.jpg')] bg-cover bg-center rounded-lg flex items-end justify-between p-3">
+
+              <!-- Offer Badge -->
+              <span
+                class="absolute top-2 left-2 bg-red-600 text-white bg-opacity-60 text-xs font-bold px-2 py-1 rounded-lg shadow">
+                20% OFF
+              </span>
+
+              <!-- Price Info -->
+              <div class="bg-white bg-opacity-60 px-3 py-1 rounded-lg shadow text-center">
+                <p class="text-xs text-gray-500 line-through">$120.00</p>
+                <p class="text-green-600 font-bold">$79.99</p>
+              </div>
+              <button type="button" class="cardhover text-white bg-lime-500 rounded-lg p-1">
+                Buy now
+              </button>
+            </div>
+            <div
+              class="parent card relative bg-[url('https://www.jugglingactmama.com/wp-content/uploads/2021/10/DollarTreePizzaPanWreathChristmas680x1020-360x540.jpg')] bg-cover bg-center rounded-lg flex items-end justify-between p-3">
+
+              <!-- Offer Badge -->
+              <span
+                class="absolute top-2 left-2 bg-red-600 text-white bg-opacity-60 text-xs font-bold px-2 py-1 rounded-lg shadow">
+                20% OFF
+              </span>
+
+              <!-- Price Info -->
+              <div class="bg-white bg-opacity-60 px-3 py-1 rounded-lg shadow text-center">
+                <p class="text-xs text-gray-500 line-through">$120.00</p>
+                <p class="text-green-600 font-bold">$79.99</p>
+              </div>
+              <button type="button" class="cardhover text-white bg-lime-500 rounded-lg p-1">
+                Buy now
+              </button>
+            </div>
+
+          </div>
+        </div></div>
+
+        <!-- Woven Baskets -->
+         <div data-aos="zoom-in">  <div class="flex w-full  flex-col md:flex-row bg-gray-50 shadow rounded-lg overflow-hidden md:h-56">
+          <div class="md:w-full h-full grid md:grid-cols-4 grid-cols-2  gap-4 p-3">
+
+            <!-- Featured Background Image with Offer -->
+
+            <div class="parent card relative bg-[url('https://i.etsystatic.com/6491228/r/il/f0e102/5728492878/il_300x300.5728492878_mkaf.jpg')] bg-cover bg-center rounded-lg flex items-end justify-between p-3">
+
+              <!-- Offer Badge -->
+              <span
+                class="absolute top-2 left-2 bg-red-600 text-white bg-opacity-60 text-xs font-bold px-2 py-1 rounded-lg shadow">
+                20% OFF
+              </span>
+
+              <!-- Price Info -->
+              <div class="bg-white bg-opacity-60 px-3 py-1 rounded-lg shadow text-center">
+                <p class="text-xs text-gray-500 line-through">$120.00</p>
+                <p class="text-green-600 font-bold">$79.99</p>
+              </div>
+              <button type="button" class="cardhover text-white bg-lime-500 rounded-lg p-1">
+                Buy now
+              </button>
+            </div>
+
+            <!-- Additional Product Images -->
+            <div
+              class="parent card relative bg-[url('https://i.etsystatic.com/37445518/r/il/0cf307/4487780035/il_1080xN.4487780035_ljpt.jpg')] bg-cover bg-center rounded-lg flex items-end justify-between p-3">
+
+              <!-- Offer Badge -->
+              <span
+                class="absolute top-2 left-2 bg-red-600 text-white bg-opacity-60 text-xs font-bold px-2 py-1 rounded-lg shadow">
+                20% OFF
+              </span>
+
+              <!-- Price Info -->
+              <div class="bg-white bg-opacity-60 px-3 py-1 rounded-lg shadow text-center">
+                <p class="text-xs text-gray-500 line-through">$120.00</p>
+                <p class="text-green-600 font-bold">$79.99</p>
+              </div>
+              <button type="button" class="cardhover text-white bg-lime-500 rounded-lg p-1">
+                Buy now
+              </button>
+            </div>
+            <div
+              class="parent card relative bg-[url('https://i.pinimg.com/originals/86/3b/67/863b679508ecea4947821bf657d516e1.jpg')] bg-cover bg-center rounded-lg flex items-end justify-between p-3">
+
+              <!-- Offer Badge -->
+              <span
+                class="absolute top-2 left-2 bg-red-600 text-white bg-opacity-60 text-xs font-bold px-2 py-1 rounded-lg shadow">
+                20% OFF
+              </span>
+
+              <!-- Price Info -->
+              <div class="bg-white bg-opacity-60 px-3 py-1 rounded-lg shadow text-center">
+                <p class="text-xs text-gray-500 line-through">$120.00</p>
+                <p class="text-green-600 font-bold">$79.99</p>
+              </div>
+              <button type="button" class="cardhover text-white bg-lime-500 rounded-lg p-1">
+                Buy now
+              </button>
+            </div>
+            <div
+              class="parent card relative bg-[url('https://i.etsystatic.com/14112927/r/il/4d33a5/4363335834/il_600x600.4363335834_3erl.jpg')] bg-cover bg-center rounded-lg flex items-end justify-between p-3">
+
+              <!-- Offer Badge -->
+              <span
+                class="absolute top-2 left-2 bg-red-600 text-white bg-opacity-60 text-xs font-bold px-2 py-1 rounded-lg shadow">
+                20% OFF
+              </span>
+
+              <!-- Price Info -->
+              <div class="bg-white bg-opacity-60 px-3 py-1 rounded-lg shadow text-center">
+                <p class="text-xs text-gray-500 line-through">$120.00</p>
+                <p class="text-green-600 font-bold">$79.99</p>
+              </div>
+              <button type="button" class="cardhover text-white bg-lime-500 rounded-lg p-1">
+                Buy now
+              </button>
+            </div>
+
+          </div>
+        </div></div>
+      </div>
+
+    </div>
+  </div>
+
+
+
+  <!-- Services Section -->
+
+  <section class="max-w-7xl mx-auto px-6 mt-10 pt-2 mb-10">
+    <div class="grid  md:grid-cols-2 lg:grid-cols-4 gap-10 ">
+
+      <!-- Service Card -->
+
+      <div data-aos="zoom-out-up">
+        <div
+          class="parent bg-white dark:bg-transparent shadow-md overflow-hidden hover:shadow-xl transition duration-300 rounded-lg">
+          <!-- Background Image -->
+          <div class=" h-56 bg-cover bg-center card"
+            style="background-image: url('https://i.etsystatic.com/25984850/r/il/b4d681/5067665918/il_1080xN.5067665918_josq.jpg');">
+            <div class=" flex justify-end  items-center pt-3 font-normal text-xl   pr-3 z-1">
+
+              <div class=" bg-white cardhover  rounded-full  py-1 pt-1 px-1"> <i class="fa-regular fa-heart"></i> </div>
+            </div>
+          </div>
+
+          <!-- Card Content -->
+          <div class="p-6 ">
+            <h3 class="text-xl font-bold mb-2 text-lime-700 text-center dark:text-lime-400">
+              Crochet Keychains
+            </h3>
+            <p class="text-center text-gray-400 md:text-sm">Small crocheted animals or flowers.</p>
+
+
+            <!-- Price Tag -->
+            <div
+              class=" mt-2 bg-green-100 text-green-700 font-bold px-3 py-1 rounded-full hover:shadow-lg text-sm text-center shadow w-full">
+              ₹1,299
+            </div>
+            <!-- Buy Now Button -->
+            <button type="button"
+              class="w-full justify-center text-blue-500 hover:text-blue-800 focus:outline-none font-semibold rounded-lg text-sm px-5 pt-2 mb-0 inline-flex items-center dark:focus:text-blue-900">
+              <svg class="w-4 h-4 mr-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor"
+                viewBox="0 0 18 21">
+                <path
+                  d="M15 12a1 1 0 0 0 .962-.726l2-7A1 1 0 0 0 17 3H3.77L3.175.745A1 1 0 0 0 2.208 0H1a1 1 0 0 0 0 2h.438l.6 2.255v.019l2 7 .746 2.986A3 3 0 1 0 9 17a2.966 2.966 0 0 0-.184-1h2.368c-.118.32-.18.659-.184 1a3 3 0 1 0 3-3H6.78l-.5-2H15Z" />
+              </svg>
+              Buy now
+            </button>
+          </div>
+        </div>
+      </div>
+
+
+
+
+      <div data-aos="zoom-out-up">
+        <div
+          class="parent bg-white dark:bg-transparent shadow-md overflow-hidden hover:shadow-xl transition duration-300 rounded-lg">
+          <!-- Background Image -->
+          <div class=" h-56 bg-cover bg-center card"
+            style="background-image: url('https://craftshero.com/wp-content/uploads/2021/05/types-of-clay-5.jpg');">
+            <div class=" flex justify-end  items-center pt-3 font-normal text-xl   pr-3 z-1">
+
+              <div class=" bg-white cardhover  rounded-full border-3 py-1 pt-1 px-1"> <i
+                  class="fa-regular fa-heart"></i> </div>
+            </div>
+          </div>
+
+          <!-- Card Content -->
+          <div class="p-6 ">
+            <h3 class="text-xl font-bold mb-2 text-lime-700 text-center dark:text-lime-400">
+              Clay Pottery
+            </h3>
+            <p class="text-center text-gray-400 md:text-sm">Beautiful handcrafted clay pottery..</p>
+
+
+            <!-- Price Tag -->
+            <div
+              class=" mt-2 bg-green-100 text-green-700 font-bold px-3 py-1 rounded-full hover:shadow-lg text-sm text-center shadow w-full">
+              ₹1,299
+            </div>
+            <!-- Buy Now Button -->
+            <button type="button"
+              class="w-full justify-center text-blue-500 hover:text-blue-800 focus:outline-none font-semibold rounded-lg text-sm px-5 pt-2 mb-0 inline-flex items-center dark:focus:text-blue-900">
+              <svg class="w-4 h-4 mr-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor"
+                viewBox="0 0 18 21">
+                <path
+                  d="M15 12a1 1 0 0 0 .962-.726l2-7A1 1 0 0 0 17 3H3.77L3.175.745A1 1 0 0 0 2.208 0H1a1 1 0 0 0 0 2h.438l.6 2.255v.019l2 7 .746 2.986A3 3 0 1 0 9 17a2.966 2.966 0 0 0-.184-1h2.368c-.118.32-.18.659-.184 1a3 3 0 1 0 3-3H6.78l-.5-2H15Z" />
+              </svg>
+              Buy now
+            </button>
+          </div>
+        </div>
+      </div>
+
+
+      <div data-aos="zoom-out-up">
+        <div
+          class="parent bg-white dark:bg-transparent shadow-md overflow-hidden hover:shadow-xl transition duration-300 rounded-lg">
+          <!-- Background Image -->
+          <div class=" h-56 bg-cover bg-center card"
+            style="background-image: url('https://i.etsystatic.com/30115473/r/il/592a37/3217763073/il_fullxfull.3217763073_gsnd.jpg');">
+            <div class=" flex justify-end  items-center pt-3 font-normal text-xl   pr-3 z-1">
+
+              <div class=" bg-white cardhover  rounded-full border-3 py-1 pt-1 px-1"> <i
+                  class="fa-regular fa-heart"></i> </div>
+            </div>
+          </div>
+
+          <!-- Card Content -->
+          <div class="p-6 ">
+            <h3 class="text-xl font-bold mb-2 text-lime-700 text-center dark:text-lime-400">
+              Macramé Wall Hanging
+            </h3>
+            <p class="text-center text-gray-400 md:text-sm">Boho-style cotton rope wall décor</p>
+
+
+            <!-- Price Tag -->
+            <div
+              class=" mt-2 bg-green-100 text-green-700 font-bold px-3 py-1 rounded-full hover:shadow-lg text-sm text-center shadow w-full">
+              ₹1,299
+            </div>
+            <!-- Buy Now Button -->
+            <button type="button"
+              class="w-full justify-center text-blue-500 hover:text-blue-800 focus:outline-none font-semibold rounded-lg text-sm px-5 pt-2 mb-0 inline-flex items-center dark:focus:text-blue-900">
+              <svg class="w-4 h-4 mr-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor"
+                viewBox="0 0 18 21">
+                <path
+                  d="M15 12a1 1 0 0 0 .962-.726l2-7A1 1 0 0 0 17 3H3.77L3.175.745A1 1 0 0 0 2.208 0H1a1 1 0 0 0 0 2h.438l.6 2.255v.019l2 7 .746 2.986A3 3 0 1 0 9 17a2.966 2.966 0 0 0-.184-1h2.368c-.118.32-.18.659-.184 1a3 3 0 1 0 3-3H6.78l-.5-2H15Z" />
+              </svg>
+              Buy now
+            </button>
+          </div>
+        </div>
+      </div>
+
+
+      <div data-aos="zoom-out-up">
+        <div
+          class="parent bg-white dark:bg-transparent shadow-md overflow-hidden hover:shadow-xl transition duration-300 rounded-lg">
+          <!-- Background Image -->
+          <div class=" h-56 bg-cover bg-center card"
+            style="background-image: url('https://i.pinimg.com/736x/8e/03/bb/8e03bb8ad5141d0912b0d6084fbb471e.jpg');">
+            <div class=" flex justify-end  items-center pt-3 font-normal text-xl   pr-3 z-1">
+
+              <div class=" bg-white cardhover  rounded-full border-3 py-1 pt-1 px-1"> <i
+                  class="fa-regular fa-heart"></i> </div>
+            </div>
+          </div>
+
+          <!-- Card Content -->
+          <div class="p-6 ">
+            <h3 class="text-xl font-bold mb-2 text-lime-700 text-center dark:text-lime-400">
+              Wooden Coasters
+            </h3>
+            <p class="text-center text-gray-400 md:text-sm">Coasters with unique designs.</p>
+
+
+            <!-- Price Tag -->
+            <div
+              class=" mt-2 bg-green-100 text-green-700 font-bold px-3 py-1 rounded-full hover:shadow-lg text-sm text-center shadow w-full">
+              ₹1,299
+            </div>
+            <!-- Buy Now Button -->
+            <button type="button"
+              class="w-full justify-center text-blue-500 hover:text-blue-800 focus:outline-none font-semibold rounded-lg text-sm px-5 pt-2 mb-0 inline-flex items-center dark:focus:text-blue-900">
+              <svg class="w-4 h-4 mr-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor"
+                viewBox="0 0 18 21">
+                <path
+                  d="M15 12a1 1 0 0 0 .962-.726l2-7A1 1 0 0 0 17 3H3.77L3.175.745A1 1 0 0 0 2.208 0H1a1 1 0 0 0 0 2h.438l.6 2.255v.019l2 7 .746 2.986A3 3 0 1 0 9 17a2.966 2.966 0 0 0-.184-1h2.368c-.118.32-.18.659-.184 1a3 3 0 1 0 3-3H6.78l-.5-2H15Z" />
+              </svg>
+              Buy now
+            </button>
+          </div>
+        </div>
+      </div>
+
+
+      <div data-aos="zoom-out-up">
+        <div
+          class="parent bg-white dark:bg-transparent shadow-md overflow-hidden hover:shadow-xl transition duration-300 rounded-lg">
+          <!-- Background Image -->
+          <div class=" h-56 bg-cover bg-center card"
+            style="background-image: url('https://retaildesignblog.net/wp-content/uploads/2011/08/Zeppelin-coccoon-lamp-by-Marcel-Wanders-02.jpg');">
+            <div class=" flex justify-end  items-center pt-3 font-normal text-xl   pr-3 z-1">
+
+              <div class=" bg-white cardhover  rounded-full border-3 py-1 pt-1 px-1"> <i
+                  class="fa-regular fa-heart"></i> </div>
+            </div>
+          </div>
+
+          <!-- Card Content -->
+          <div class="p-6 ">
+            <h3 class="text-xl font-bold mb-2 text-lime-700 text-center dark:text-lime-400">
+              Origami Paper Lamps
+            </h3>
+            <p class="text-center text-gray-400 md:text-sm">High quality folded paper lampshades.</p>
+
+
+            <!-- Price Tag -->
+            <div
+              class=" mt-2 bg-green-100 text-green-700 font-bold px-3 py-1 rounded-full hover:shadow-lg text-sm text-center shadow w-full">
+              ₹1,299
+            </div>
+            <!-- Buy Now Button -->
+            <button type="button"
+              class="w-full justify-center text-blue-500 hover:text-blue-800 focus:outline-none font-semibold rounded-lg text-sm px-5 pt-2 mb-0 inline-flex items-center dark:focus:text-blue-900">
+              <svg class="w-4 h-4 mr-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor"
+                viewBox="0 0 18 21">
+                <path
+                  d="M15 12a1 1 0 0 0 .962-.726l2-7A1 1 0 0 0 17 3H3.77L3.175.745A1 1 0 0 0 2.208 0H1a1 1 0 0 0 0 2h.438l.6 2.255v.019l2 7 .746 2.986A3 3 0 1 0 9 17a2.966 2.966 0 0 0-.184-1h2.368c-.118.32-.18.659-.184 1a3 3 0 1 0 3-3H6.78l-.5-2H15Z" />
+              </svg>
+              Buy now
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div data-aos="zoom-out-up">
+        <div
+          class="parent bg-white dark:bg-transparent shadow-md overflow-hidden hover:shadow-xl transition duration-300 rounded-lg">
+          <!-- Background Image -->
+          <div class=" h-56 bg-cover bg-center card"
+            style="background-image: url('https://i.pinimg.com/736x/03/1e/e8/031ee888dd2be3b82106c2ecc26404bd.jpg');">
+            <div class=" flex justify-end  items-center pt-3 font-normal text-xl   pr-3 z-1">
+
+              <div class=" bg-white cardhover  rounded-full border-3 py-1 pt-1 px-1"> <i
+                  class="fa-regular fa-heart"></i> </div>
+            </div>
+          </div>
+
+          <!-- Card Content -->
+          <div class="p-6 ">
+            <h3 class="text-xl font-bold mb-2 text-lime-700 text-center dark:text-lime-400">
+              Embroidery Hoop Art
+            </h3>
+            <p class="text-center text-gray-400 md:text-sm">Stitched patterns and quotes in hoops.</p>
+
+
+            <!-- Price Tag -->
+            <div
+              class=" mt-2 bg-green-100 text-green-700 font-bold px-3 py-1 rounded-full hover:shadow-lg text-sm text-center shadow w-full">
+              ₹1,299
+            </div>
+            <!-- Buy Now Button -->
+            <button type="button"
+              class="w-full justify-center text-blue-500 hover:text-blue-800 focus:outline-none font-semibold rounded-lg text-sm px-5 pt-2 mb-0 inline-flex items-center dark:focus:text-blue-900">
+              <svg class="w-4 h-4 mr-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor"
+                viewBox="0 0 18 21">
+                <path
+                  d="M15 12a1 1 0 0 0 .962-.726l2-7A1 1 0 0 0 17 3H3.77L3.175.745A1 1 0 0 0 2.208 0H1a1 1 0 0 0 0 2h.438l.6 2.255v.019l2 7 .746 2.986A3 3 0 1 0 9 17a2.966 2.966 0 0 0-.184-1h2.368c-.118.32-.18.659-.184 1a3 3 0 1 0 3-3H6.78l-.5-2H15Z" />
+              </svg>
+              Buy now
+            </button>
+          </div>
+        </div>
+      </div>
+
+
+      <div data-aos="zoom-out-up">
+        <div
+          class="parent bg-white dark:bg-transparent shadow-md overflow-hidden hover:shadow-xl transition duration-300 rounded-lg">
+          <!-- Background Image -->
+          <div class=" h-56 bg-cover bg-center card"
+            style="background-image: url('https://thumbs.dreamstime.com/b/thai-style-terrapotta-lamps-23610396.jpg');">
+            <div class=" flex justify-end  items-center pt-3 font-normal text-xl   pr-3 z-1">
+
+              <div class=" bg-white cardhover  rounded-full border-3 py-1 pt-1 px-1"> <i
+                  class="fa-regular fa-heart"></i> </div>
+            </div>
+          </div>
+
+          <!-- Card Content -->
+          <div class="p-6 ">
+            <h3 class="text-xl font-bold mb-2 text-lime-700 text-center dark:text-lime-400">
+              Handmade Clay Pots
+            </h3>
+            <p class="text-center text-gray-400 md:text-sm">Small decorative clay pots for plants or home décor.</p>
+
+            <!-- Price Tag -->
+            <div
+              class=" mt-2 bg-green-100 text-green-700 font-bold px-3 py-1 rounded-full hover:shadow-lg text-sm text-center shadow w-full">
+              ₹1,299
+            </div>
+            <!-- Buy Now Button -->
+            <button type="button"
+              class="w-full justify-center text-blue-500 hover:text-blue-800 focus:outline-none font-semibold rounded-lg text-sm px-5 pt-2 mb-0 inline-flex items-center dark:focus:text-blue-900">
+              <svg class="w-4 h-4 mr-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor"
+                viewBox="0 0 18 21">
+                <path
+                  d="M15 12a1 1 0 0 0 .962-.726l2-7A1 1 0 0 0 17 3H3.77L3.175.745A1 1 0 0 0 2.208 0H1a1 1 0 0 0 0 2h.438l.6 2.255v.019l2 7 .746 2.986A3 3 0 1 0 9 17a2.966 2.966 0 0 0-.184-1h2.368c-.118.32-.18.659-.184 1a3 3 0 1 0 3-3H6.78l-.5-2H15Z" />
+              </svg>
+              Buy now
+            </button>
+          </div>
+        </div>
+      </div>
+
+
+      <div data-aos="zoom-out-up">
+        <div
+          class="parent bg-white dark:bg-transparent shadow-md overflow-hidden hover:shadow-xl transition duration-300 rounded-lg">
+          <!-- Background Image -->
+          <div class=" h-56 bg-cover bg-center card"
+            style="background-image: url('https://images.pexels.com/photos/7419521/pexels-photo-7419521.jpeg');">
+            <div class=" flex justify-end  items-center pt-3 font-normal text-xl   pr-3 z-1">
+
+              <div class=" bg-white cardhover  rounded-full border-3 py-1 pt-1 px-1"> <i
+                  class="fa-regular fa-heart"></i> </div>
+            </div>
+          </div>
+
+          <!-- Card Content -->
+          <div class="p-6 ">
+            <h3 class="text-xl font-bold mb-2 text-lime-700 text-center dark:text-lime-400">
+              Beaded Jewelry
+            </h3>
+            <p class="text-center text-gray-400 md:text-sm">Bracelets, necklaces, and earrings made with beads.</p>
+
+            <!-- Price Tag -->
+            <div
+              class=" mt-2 bg-green-100 text-green-700 font-bold px-3 py-1 rounded-full hover:shadow-lg text-sm text-center shadow w-full">
+              ₹1,299
+            </div>
+            <!-- Buy Now Button -->
+            <button type="button"
+              class="w-full justify-center text-blue-500 hover:text-blue-800 focus:outline-none font-semibold rounded-lg text-sm px-5 pt-2 mb-0 inline-flex items-center dark:focus:text-blue-900">
+              <svg class="w-4 h-4 mr-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor"
+                viewBox="0 0 18 21">
+                <path
+                  d="M15 12a1 1 0 0 0 .962-.726l2-7A1 1 0 0 0 17 3H3.77L3.175.745A1 1 0 0 0 2.208 0H1a1 1 0 0 0 0 2h.438l.6 2.255v.019l2 7 .746 2.986A3 3 0 1 0 9 17a2.966 2.966 0 0 0-.184-1h2.368c-.118.32-.18.659-.184 1a3 3 0 1 0 3-3H6.78l-.5-2H15Z" />
+              </svg>
+              Buy now
+            </button>
+          </div>
+        </div>
+      </div>
+
+
+      <div data-aos="zoom-out-up">
+        <div
+          class="parent bg-white dark:bg-transparent shadow-md overflow-hidden hover:shadow-xl transition duration-300 rounded-lg">
+          <!-- Background Image -->
+          <div class=" h-56 bg-cover bg-center card"
+            style="background-image: url('https://images.pexels.com/photos/15285441/pexels-photo-15285441.jpeg?auto=compress&cs=tinysrgb&h=627&fit=crop&w=1200');">
+            <div class=" flex justify-end  items-center pt-3 font-normal text-xl   pr-3 z-1">
+
+              <div class=" bg-white cardhover  rounded-full border-3 py-1 pt-1 px-1"> <i
+                  class="fa-regular fa-heart"></i> </div>
+            </div>
+          </div>
+
+          <!-- Card Content -->
+          <div class="p-6 ">
+            <h3 class="text-xl font-bold mb-2 text-lime-700 text-center dark:text-lime-400">
+              Terracotta Figurines
+            </h3>
+            <p class="text-center text-gray-400 md:text-sm">Quality mini clay figurines for decoration.</p>
+
+
+            <!-- Price Tag -->
+            <div
+              class=" mt-2 bg-green-100 text-green-700 font-bold px-3 py-1 rounded-full hover:shadow-lg text-sm text-center shadow w-full">
+              ₹1,299
+            </div>
+            <!-- Buy Now Button -->
+            <button type="button"
+              class="w-full justify-center text-blue-500 hover:text-blue-800 focus:outline-none font-semibold rounded-lg text-sm px-5 pt-2 mb-0 inline-flex items-center dark:focus:text-blue-900">
+              <svg class="w-4 h-4 mr-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor"
+                viewBox="0 0 18 21">
+                <path
+                  d="M15 12a1 1 0 0 0 .962-.726l2-7A1 1 0 0 0 17 3H3.77L3.175.745A1 1 0 0 0 2.208 0H1a1 1 0 0 0 0 2h.438l.6 2.255v.019l2 7 .746 2.986A3 3 0 1 0 9 17a2.966 2.966 0 0 0-.184-1h2.368c-.118.32-.18.659-.184 1a3 3 0 1 0 3-3H6.78l-.5-2H15Z" />
+              </svg>
+              Buy now
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div data-aos="zoom-out-up">
+        <div
+          class="parent bg-white dark:bg-transparent shadow-md overflow-hidden hover:shadow-xl transition duration-300 rounded-lg">
+          <!-- Background Image -->
+          <div class=" h-56 bg-cover bg-center card"
+            style="background-image: url('https://tse4.mm.bing.net/th/id/OIP.6xmRR5ng61j8AlypEgmU6QHaE6?r=0&w=794&h=526&rs=1&pid=ImgDetMain&o=7&rm=3');">
+            <div class=" flex justify-end  items-center pt-3 font-normal text-xl   pr-3 z-1">
+
+              <div class=" bg-white cardhover  rounded-full border-3 py-1 pt-1 px-1"> <i
+                  class="fa-regular fa-heart"></i> </div>
+            </div>
+          </div>
+
+          <!-- Card Content -->
+          <div class="p-6 ">
+            <h3 class="text-xl font-bold mb-2 text-lime-700 text-center dark:text-lime-400">
+              Handwoven Basket
+            </h3>
+            <p class="text-center text-gray-400 md:text-sm">Crafted with care, perfect for every corner of your home.
+            </p>
+
+
+            <!-- Price Tag -->
+            <div
+              class=" mt-2 bg-green-100 text-green-700 font-bold px-3 py-1 rounded-full hover:shadow-lg text-sm text-center shadow w-full">
+              ₹1,299
+            </div>
+            <!-- Buy Now Button -->
+            <button type="button"
+              class="w-full justify-center text-blue-500 hover:text-blue-800 focus:outline-none font-semibold rounded-lg text-sm px-5 pt-2 mb-0 inline-flex items-center dark:focus:text-blue-900">
+              <svg class="w-4 h-4 mr-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor"
+                viewBox="0 0 18 21">
+                <path
+                  d="M15 12a1 1 0 0 0 .962-.726l2-7A1 1 0 0 0 17 3H3.77L3.175.745A1 1 0 0 0 2.208 0H1a1 1 0 0 0 0 2h.438l.6 2.255v.019l2 7 .746 2.986A3 3 0 1 0 9 17a2.966 2.966 0 0 0-.184-1h2.368c-.118.32-.18.659-.184 1a3 3 0 1 0 3-3H6.78l-.5-2H15Z" />
+              </svg>
+              Buy now
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div data-aos="zoom-out-up">
+        <div
+          class="parent bg-white dark:bg-transparent shadow-md overflow-hidden hover:shadow-xl transition duration-300 rounded-lg">
+          <!-- Background Image -->
+          <div class=" h-56 bg-cover bg-center card"
+            style="background-image: url('https://alexnld.com/wp-content/uploads/2018/12/9eae191c-cf2e-4871-863d-6e28db43777a.jpg');">
+            <div class=" flex justify-end  items-center pt-3 font-normal text-xl   pr-3 z-1">
+
+              <div class=" bg-white cardhover  rounded-full border-3 py-1 pt-1 px-1"> <i
+                  class="fa-regular fa-heart"></i> </div>
+            </div>
+          </div>
+
+          <!-- Card Content -->
+          <div class="p-6 ">
+            <h3 class="text-xl font-bold mb-2 text-lime-700 text-center dark:text-lime-400">
+              Leather Bags
+            </h3>
+            <p class="text-center text-gray-400 md:text-sm">Durable, stylish handmade leather bags.</p>
+
+
+            <!-- Price Tag -->
+            <div
+              class=" mt-2 bg-green-100 text-green-700 font-bold px-3 py-1 rounded-full hover:shadow-lg text-sm text-center shadow w-full">
+              ₹1,299
+            </div>
+            <!-- Buy Now Button -->
+            <button type="button"
+              class="w-full justify-center text-blue-500 hover:text-blue-800 focus:outline-none font-semibold rounded-lg text-sm px-5 pt-2 mb-0 inline-flex items-center dark:focus:text-blue-900">
+              <svg class="w-4 h-4 mr-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor"
+                viewBox="0 0 18 21">
+                <path
+                  d="M15 12a1 1 0 0 0 .962-.726l2-7A1 1 0 0 0 17 3H3.77L3.175.745A1 1 0 0 0 2.208 0H1a1 1 0 0 0 0 2h.438l.6 2.255v.019l2 7 .746 2.986A3 3 0 1 0 9 17a2.966 2.966 0 0 0-.184-1h2.368c-.118.32-.18.659-.184 1a3 3 0 1 0 3-3H6.78l-.5-2H15Z" />
+              </svg>
+              Buy now
+            </button>
+          </div>
+        </div>
+      </div>
+
+
+      <div data-aos="zoom-out-up">
+        <div
+          class="parent bg-white dark:bg-transparent shadow-md overflow-hidden hover:shadow-xl transition duration-300 rounded-lg">
+          <!-- Background Image -->
+          <div class=" h-56 bg-cover bg-center card"
+            style="background-image: url('https://www.woodgeekstore.com/cdn/shop/products/wooden-bowls-set-of-6-black-sirish-plywood-pattern-woodgeekstore_2_800x.jpg?v=1605976141');">
+            <div class=" flex justify-end  items-center pt-3 font-normal text-xl   pr-3 z-1">
+
+              <div class=" bg-white cardhover  rounded-full border-3 py-1 pt-1 px-1"> <i
+                  class="fa-regular fa-heart"></i> </div>
+            </div>
+          </div>
+
+          <!-- Card Content -->
+          <div class="p-6 ">
+            <h3 class="text-xl font-bold mb-2 text-lime-700 text-center dark:text-lime-400">
+              Handcrafted Bowl
+            </h3>
+            <p class="text-center text-gray-400 md:text-sm">Natural beauty carved into timeless elegance.</p>
+
+
+            <!-- Price Tag -->
+            <div
+              class=" mt-2 bg-green-100 text-green-700 font-bold px-3 py-1 rounded-full hover:shadow-lg text-sm text-center shadow w-full">
+              ₹1,299
+            </div>
+            <!-- Buy Now Button -->
+            <button type="button"
+              class="w-full justify-center text-blue-500 hover:text-blue-800 focus:outline-none font-semibold rounded-lg text-sm px-5 pt-2 mb-0 inline-flex items-center dark:focus:text-blue-900">
+              <svg class="w-4 h-4 mr-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor"
+                viewBox="0 0 18 21">
+                <path
+                  d="M15 12a1 1 0 0 0 .962-.726l2-7A1 1 0 0 0 17 3H3.77L3.175.745A1 1 0 0 0 2.208 0H1a1 1 0 0 0 0 2h.438l.6 2.255v.019l2 7 .746 2.986A3 3 0 1 0 9 17a2.966 2.966 0 0 0-.184-1h2.368c-.118.32-.18.659-.184 1a3 3 0 1 0 3-3H6.78l-.5-2H15Z" />
+              </svg>
+              Buy now
+            </button>
+          </div>
+        </div>
+      </div>
+
+
+
+    
+  </div>
+
+</div>
+<div class=" md:flex justify-center md:w-full mt-10 items-center" >
+
+  <!-- 🎥 Video Gallery -->
+ <div data-aos="zoom-out">
+      
+    </div>
+
+  <div class="mb-4 md:mb-16 mt-15 text-center" id="vedio">
+    <h3 class="text-3xl pl-5 md:font-extrabold text-green-700 mb-3 text-center md:pr-20">Top Rated Products</h3>
+    <p class="text-gray-600 max-w-xl mx-auto md:mb-6 text-center px-5 md:pr-20">
+      Customers love this product for its quality, durability, and value for money. 
+        It’s one of the highest-rated items in our store and a top choice for frequent buyers.
+      
+    </p>
+   <!-- Rating -->
+
+                <div class="flex items-center px-5 justify-center md:pr-20">
+                    <svg class="w-4 h-4 text-yellow-300 me-1" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                        fill="currentColor" viewBox="0 0 22 20">
+                        <path
+                            d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z" />
+                    </svg>
+                    <svg class="w-4 h-4 text-yellow-300 me-1" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                        fill="currentColor" viewBox="0 0 22 20">
+                        <path
+                            d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z" />
+                    </svg>
+                    <svg class="w-4 h-4 text-yellow-300 me-1" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                        fill="currentColor" viewBox="0 0 22 20">
+                        <path
+                            d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z" />
+                    </svg>
+                    <svg class="w-4 h-4 text-yellow-300 me-1" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                        fill="currentColor" viewBox="0 0 22 20">
+                        <path
+                            d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z" />
+                    </svg>
+                    <svg class="w-4 h-4 text-yellow-300 me-1" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                        fill="currentColor" viewBox="0 0 22 20">
+                        <path
+                            d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z" />
+                    </svg>
+                    
+</div>
+
+
+    </div>
+
+   
+   <div id="default-carousel" class="relative w-full" data-carousel="slide">
+  <!-- Carousel wrapper -->
+  <div class="relative h-64 md:h-[400px] overflow-hidden rounded-lg">
+    
+    <!-- Item 1 -->
+    <div class="hidden duration-1000 ease-in-out bg-[url('https://i.pinimg.com/originals/3f/eb/66/3feb664fc4eaac7cc10aead734aa5bb0.jpg')] bg-cover bg-center" data-carousel-item>
+      <div class="h-full w-full flex flex-col justify-center bg-black/30 px-6">
+        <h1 class="text-3xl pl-5 md:text-5xl font-extrabold text-white drop-shadow-lg mb-4">
+          Enjoy 15% OFF
+        </h1>
+        
+      </div>
+    </div>
+
+    <!-- Item 2 -->
+    <div class="hidden duration-1000 ease-in-out bg-[url('https://i.pinimg.com/originals/6e/3d/de/6e3dde7a923de3c77291da0829f654c2.jpg')] bg-cover bg-center" data-carousel-item>
+      <div class="h-full w-full flex items-center justify-center bg-black/30">
+        <h1 class="text-2xl md:text-4xl font-bold text-white">Elegant Craft Showcase</h1>
+      </div>
+    </div>
+
+    <!-- Item 3 -->
+    <div class="hidden duration-1000 ease-in-out bg-[url('https://cdn.globalauctionplatform.com/64ffd839-07cd-4c5d-8408-a785016fdb1f/d06a6497-4207-4713-ac50-2cf4b361729d/original.jpg')] bg-cover bg-center" data-carousel-item>
+      <div class="h-full w-full flex items-center justify-center bg-black/30">
+        <h1 class="text-2xl md:text-4xl font-bold text-white">Premium Pottery & Ceramics</h1>
+      </div>
+    </div>
+
+    <!-- Item 4 -->
+    <div class="hidden duration-1000 ease-in-out bg-[url('https://i.ytimg.com/vi/1pQg2Q5BVsk/maxresdefault.jpg')] bg-cover bg-center" data-carousel-item>
+      <div class="h-full w-full flex items-center justify-center bg-black/30">
+        <h1 class="text-2xl md:text-4xl font-bold text-white">Home Decor</h1>
+      </div>
+    </div>
+
+    <!-- Item 5 -->
+    <div class="hidden duration-1000 ease-in-out bg-[url('https://www3.uwsp.edu/art-design/PublishingImages/gallery-spring-2018.jpg')] bg-cover bg-center" data-carousel-item>
+      <div class="h-full w-full flex items-center justify-center bg-black/30">
+        <h1 class="text-2xl md:text-4xl font-bold text-white">Artistry Redefined</h1>
+      </div>
+    </div>
+  </div>
+
+  <!-- Slider controls -->
+  <button type="button" class="absolute top-0 left-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-prev>
+    <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-black/50 group-hover:bg-black/70">
+      <svg class="w-4 h-4 text-white" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 1 1 5l4 4"/>
+      </svg>
+    </span>
+  </button>
+  <button type="button" class="absolute top-0 right-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-next>
+    <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-black/50 group-hover:bg-black/70">
+      <svg class="w-4 h-4 text-white" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 9 4-4-4-4"/>
+      </svg>
+    </span>
+  </button>
+</div>
+
+  </section>
+
+
+
+
+
+  <!-- Footer -->
+ <footer class="bg-gray-100 dark:bg-gray-900  shadow-sm ">
+  <div class="w-full max-w-screen-xl mx-auto p-6 md:py-8">
+    <!-- Top Section -->
+    <div class="sm:flex sm:items-center sm:justify-between">
+      <!-- Logo + Name -->
+      <a href="/" class="flex items-center mb-4 sm:mb-0 space-x-3 rtl:space-x-reverse">
+        <img src="/images/logo.png" class="h-10" alt="Craftify Logo" />
+        <span class="self-center text-2xl font-semibold text-gray-700 dark:text-white">Craftify</span>
+      </a>
+
+      <!-- Footer Links -->
+      <ul class="flex flex-wrap justify-between items-center mb-6 text-sm font-medium text-gray-600 dark:text-gray-400 sm:mb-0">
+        <li>
+          <a href="/about" class="hover:underline me-4 md:me-6">About Us</a>
+        </li>
+        <li>
+          <a href="/shop" class="hover:underline me-4 md:me-6">Shop</a>
+        </li>
+        <li>
+          <a href="/privacy" class="hover:underline me-4 md:me-6">Privacy Policy</a>
+        </li>
+        <li>
+          <a href="/contact" class="hover:underline">Contact</a>
+        </li>
+      </ul>
+    </div>
+
+    <!-- Divider -->
+    <hr class="my-6 border-gray-300 dark:border-gray-700 sm:mx-auto lg:my-8" />
+
+    <!-- Newsletter -->
+    <div class="text-center mb-6">
+      <h3 class="text-lg font-semibold text-gray-700 dark:text-white">Join Our Craft Community</h3>
+      <p class="text-sm text-gray-500 dark:text-gray-400 mb-4">Get exclusive offers & updates on new handmade products.</p>
+      <form class="flex justify-center text-gray-200">
+        <input  type="email" placeholder="Enter your email"
+          class="px-4 py-2 w-64 rounded-l-lg border border-gray-500 focus:outline-none focus:ring-1 focus:ring-gray-900" />
+        <button type="submit"
+          class="px-4 py-2 bg-slate-700 text-white rounded-r-lg hover:bg-slate-200 hover:text-black">Subscribe</button>
+      </form>
+    </div>
+
+    <!-- Bottom -->
+    <span class="block text-sm text-gray-500 sm:text-center dark:text-gray-400">© 2025 <a href="/" class="hover:underline">Craftify™</a>. All Rights Reserved.</span>
+  </div>
+</footer>
+
+
+
+
+
+
+
+  <script src="https://unpkg.com/flowbite@1.6.5/dist/flowbite.min.js"></script>
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+</body>
+
+</html>
