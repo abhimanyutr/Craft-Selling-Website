@@ -117,54 +117,107 @@
       display: flex;
       /* show on hover */
     }
+    .navItem{
+    color: white;
+  }
   </style>
 </head>
 
 <body>
-  <header class="h-auto md:white">
+  <header class="h-auto md:white relative">
     <!-- Top Navbar -->
-    <nav class="bg-gray-100 dark:bg-gray-900 border-gray-200  shadow">
-      <div class="flex flex-wrap justify-between items-center mx-auto max-w-screen-xl p-3">
+   <nav class="bg-white  dark:bg-gray-800">
+      <div class="flex justify-between items-center md:ml-15   max-w-screen-xl mx-auto p-4">
         <!-- Logo -->
-        <a href="#" class="flex items-center space-x-3 rtl:space-x-reverse">
-          <img src="./Images/craft-logo.png" class="h-10 rounded-full" alt="Craft Logo" />
-          <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">
-            The Craft Corner
-          </span>
+        <a href="#" class="flex items-center space-x-3 ml-0">
+          <img src="./Images/craft-logo.png" class="h-10 w-10 rounded-full" alt="CraftsyCorner Logo">
+          <span class="text-2xl font-bold text-gray-800 dark:text-white">CraftsyCorner</span>
         </a>
-        <!-- Right side links -->
-        <div class="flex items-center space-x-6 rtl:space-x-reverse">
-          <a href="tel:5541251234" class="text-sm text-gray-500 dark:text-white hover:underline">
-            (555) 412-1234
-          </a>
-          <a href="#" class="text-sm text-blue-600 dark:text-blue-400 hover:underline">
-            Login
-          </a>
+        <!-- Right links -->
+        <div class="flex items-center space-x-6">
+         <div class="flex md:items-center items-end space-x-6">
+
+  <!-- Cart -->
+  <button id="dropdownHoverButton" data-dropdown-toggle="dropdownHover" data-dropdown-trigger="hover"
+    class="hidden md:inline-flex text-white navItems focus:outline-none font-medium rounded-lg text-sm px-5 py-2.5 text-center items-center"
+    type="button">
+    <img class="hover:underline rounded-full" src="https://cdn-icons-png.flaticon.com/512/7805/7805936.png" width="30" alt="">
+  </button>
+
+  <!-- Dropdown menu -->
+  <div id="dropdownHover" class="z-10 hidden bg-white divide-y mt-0 divide-gray-100 dark:bg-transparent">
+    <ul class="py-2 text-sm text-gray-700 dark:text-transparent" aria-labelledby="dropdownHoverButton">
+      <li>
+        <a href="#" class="text-center block px-2 py-1 dark:hover:bg-transparent dark:text-white font-extrabold">Cart</a>
+      </li>
+    </ul>
+  </div>
+
+  <!-- User -->
+  <button id="dropdownHoverButton2" data-dropdown-toggle="dropdownHover2" data-dropdown-trigger="hover"
+    class="hidden md:inline-flex text-white navItems focus:outline-none font-medium rounded-lg text-sm px-5 py-2.5 text-center items-center"
+    type="button">
+    <img class="hover:underline" src="https://static.vecteezy.com/system/resources/previews/019/879/186/non_2x/user-icon-on-transparent-background-free-png.png" width="44" alt="">
+  </button>
+
+  <!-- Dropdown menu -->
+  <div id="dropdownHover2" class="z-10 hidden bg-white divide-y mt-0 divide-gray-100 dark:bg-transparent">
+    <ul class="py-2 text-sm text-gray-700 dark:text-transparent" aria-labelledby="dropdownHoverButton2">
+      <li>
+        <a href="#" class="text-center block px-2 py-1 dark:hover:bg-transparent dark:text-white font-extrabold">Sign in</a>
+      </li>
+    </ul>
+  </div>
+
+  <!-- Gift -->
+  <button id="dropdownHoverButton3" data-dropdown-toggle="dropdownHover3" data-dropdown-trigger="hover"
+    class="hidden md:inline-flex text-white navItems focus:outline-none font-medium rounded-lg text-sm px-5 py-2.5 text-center items-center"
+    type="button">
+    <img class="rounded-full hover:underline" src="https://img.freepik.com/premium-vector/gift-box-silhouette-vector_1049360-1320.jpg" width="28" alt="">
+  </button>
+
+  <!-- Dropdown menu -->
+  <div id="dropdownHover3" class="z-10 hidden bg-white divide-y mt-0 divide-gray-100 dark:bg-transparent">
+    <ul class="py-2 text-sm text-gray-700 dark:text-transparent" aria-labelledby="dropdownHoverButton3">
+      <li>
+        <a href="#" class="text-center block px-2 py-1 dark:hover:bg-transparent dark:text-white font-extrabold">Gifts</a>
+      </li>
+    </ul>
+  </div>
+
+  <!-- Mobile hamburger menu (only visible on small screens) -->
+  <div class="text-center ">
+    <button class="text-white hover:bg-transparent text-sm px-5 dark:bg-transparent dark:hover:bg-transparent focus:outline-none dark:focus:bg-transparent"
+      type="button" data-drawer-target="drawer-disabled-backdrop" data-drawer-toggle="drawer-disabled-backdrop"
+      aria-controls="drawer-disabled-backdrop">
+      <svg class="w-6 h-6 dark:text-gray-50 hover:text-white hover:text-lg" aria-hidden="true"
+        xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
+        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+          stroke-width="2" d="M1 1h15M1 7h15M1 13h15" />
+      </svg>
+    </button>
+  </div>
+
+</div>
+
         </div>
       </div>
     </nav>
 
-    <!-- Secondary Navbar -->
-    <nav class="bg-gray-50 dark:bg-gray-700 border-b">
-      <div class="max-w-screen-xl px-4 py-3 mx-auto">
-        <div class="flex items-center justify-center">
-          <ul class="flex flex-row font-medium mt-0 space-x-8 rtl:space-x-reverse text-sm">
-            <li>
-              <a href="./index.html" class="text-gray-900 dark:text-white hover:underline" aria-current="page">Home</a>
-            </li>
-            <li>
-              <a href="#" class="text-gray-900 dark:text-white hover:underline">Product</a>
-            </li>
-            <li>
-              <a href="./about.html" class="text-gray-900 dark:text-white hover:underline">About Us</a>
-            </li>
-            <li>
-              <a href="#" class="text-gray-900 dark:text-white hover:underline">Contact</a>
-            </li>
-          </ul>
-        </div>
+    <!-- Nav Links -->
+    <nav class="bg-gray-50 dark:dark:bg-gray-400">
+      <div class="max-w-screen-xl w-full mx-auto px-4 md:pb-1 md:ml-15 pb-1 py-1 ">
+        <ul class="flex justify-start gap-6 font-medium text-sm text-gray-900 dark:text-white w-full">
+          <li class="navItem"><a href="./index.html" class="hover:underline">Home</a></li>
+          <li class="navItem"><a href="./shop.html" class="hover:underline">Products</a></li>
+          <li class="navItem"><a href="#" class="hover:underline">About Us</a></li>
+          <li class="navItem"><a href="./about.html#contact" class="hover:underline">Contact</a></li>
+        </ul>
       </div>
     </nav>
+
+
+
 
     <!-- Services Header -->
     <div class="flex justify-end pl-20 pr-20 mt-0 mb-0">
@@ -173,7 +226,7 @@
         🚚 Free shipping on orders above ₹1000!
       </marquee>
     </div>
-    <div class="pb-5 pt-0 text-white   !font-medium sm:text-center md:text-left md:pl-36 px-10">
+    <div class="mb-10 mt-0 pt-0 text-white   !font-medium sm:text-center md:text-left md:pl-28 px-10">
       <h2 class="text-2xl md:text-5xl font-extrabold drop-shadow-[2px_2px_2px_black]">
         Our Handmade Crafts
       </h2>
@@ -1009,16 +1062,31 @@
       
     </div>
 
-  <div class="mb-4 md:mb-16 mt-15 text-center" id="vedio">
-    <h3 class="text-3xl pl-5 md:font-extrabold text-green-700 mb-3 text-center md:pr-20">Top Rated Products</h3>
-    <p class="text-gray-600 max-w-xl mx-auto md:mb-6 text-center px-5 md:pr-20">
+  <div class="mb-4 md:mb-16 mt-15 text-left text-justify">
+    <h3 class="text-3xl  md:font-extrabold text-green-700 mb-3 text-center md:pr-20 ">Top Rated Products</h3>
+    <p class="text-gray-600 max-w-xl mx-auto md:mb-6 text-center md:pr-20">
       Customers love this product for its quality, durability, and value for money. 
         It’s one of the highest-rated items in our store and a top choice for frequent buyers.
       
     </p>
    <!-- Rating -->
 
-                <div class="flex items-center px-5 justify-center md:pr-20">
+<div class="flex justify-center -space-x-4 rtl:space-x-reverse pt-5 items-center md:pr-20">
+                <img class="w-10 h-10 border border-white rounded-full dark:border-gray-800"
+                    src="https://images.pexels.com/photos/30029366/pexels-photo-30029366.jpeg?cs=srgb&dl=pexels-mlkbnl-30029366.jpg&fm=jpg"
+                    alt="">
+                <img class="w-10 h-10 border border-white rounded-full dark:border-gray-800"
+                    src="https://lirp.cdn-website.com/846c4f9c/dms3rep/multi/opt/GettyImages-522549708-1920w.jpg"
+                    alt="">
+                <img class="w-10 h-10 border border-white rounded-full dark:border-gray-800"
+                    src="https://s1.r29static.com/bin/entry/62d/0,383,3011,1581/x,80/2159517/your-complete-guide-to-the-2159517.jpg"
+                    alt="">
+                <a class="flex items-center justify-center w-10 h-10 text-xs font-medium text-white bg-gray-950 border border-white rounded-full hover:bg-gray-800 dark:border-gray-800"
+                    href="#">+99</a>
+                <!-- Rating -->
+
+
+                <div class="flex items-center pl-5 mr-10">
                     <svg class="w-4 h-4 text-yellow-300 me-1" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
                         fill="currentColor" viewBox="0 0 22 20">
                         <path
@@ -1045,8 +1113,10 @@
                             d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z" />
                     </svg>
                     
-</div>
+                </div>
 
+
+            </div>
 
     </div>
 
@@ -1124,8 +1194,8 @@
     <div class="sm:flex sm:items-center sm:justify-between">
       <!-- Logo + Name -->
       <a href="/" class="flex items-center mb-4 sm:mb-0 space-x-3 rtl:space-x-reverse">
-        <img src="/images/logo.png" class="h-10" alt="Craftify Logo" />
-        <span class="self-center text-2xl font-semibold text-gray-700 dark:text-white">Craftify</span>
+        <img src="./Images/craft-logo.png" class="h-10 rounded-full" alt="Craftify Logo" />
+        <span class="self-center text-2xl font-semibold text-gray-700 dark:text-white">CraftsyCorner</span>
       </a>
 
       <!-- Footer Links -->
@@ -1161,7 +1231,7 @@
     </div>
 
     <!-- Bottom -->
-    <span class="block text-sm text-gray-500 sm:text-center dark:text-gray-400">© 2025 <a href="/" class="hover:underline">Craftify™</a>. All Rights Reserved.</span>
+    <span class="block text-sm text-gray-500 sm:text-center dark:text-gray-400">© 2025 <a href="/" class="hover:underline">CraftsyCorner™</a>. All Rights Reserved.</span>
   </div>
 </footer>
 

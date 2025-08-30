@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8" />
+  <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>About</title>
   <link rel="icon" href="../Images/logoT.png">
@@ -22,134 +23,415 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
     integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
-
+<style>
+  
+</style>
 </head>
+
 <body>
 
-    <header class="h-auto md:white">
+  <header class="h-auto md:white">
     <!-- Top Navbar -->
-    <nav class="bg-gray-100 dark:bg-gray-900 border-gray-200  shadow">
-      <div class="flex flex-wrap justify-between items-center mx-auto max-w-screen-xl p-3">
+     <nav class="bg-white  dark:bg-gray-800">
+      <div class="flex justify-between items-center md:ml-15   max-w-screen-xl mx-auto p-4">
         <!-- Logo -->
-        <a href="#" class="flex items-center space-x-3 rtl:space-x-reverse">
-          <img src="./Images/craft-logo.png" class="h-10 rounded-full" alt="Craft Logo" />
-          <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">
-            The Craft Corner
-          </span>
+        <a href="#" class="flex items-center space-x-3 ml-0">
+          <img src="./Images/craft-logo.png" class="h-10 w-10 rounded-full" alt="CraftsyCorner Logo">
+          <span class="text-2xl font-bold text-gray-800 dark:text-white">CraftsyCorner</span>
         </a>
-        <!-- Right side links -->
-        <div class="flex items-center space-x-6 rtl:space-x-reverse">
-          <a href="tel:5541251234" class="text-sm text-gray-500 dark:text-white hover:underline">
-            (555) 412-1234
-          </a>
-          <a href="#" class="text-sm text-blue-600 dark:text-blue-400 hover:underline">
-            Login
-          </a>
-        </div>
+        <!-- Right links -->
+        <div class="flex items-center space-x-6">
+            <div class="flex md:items-center items-end space-x-6">
+
+  <!-- Cart -->
+  <button id="dropdownHoverButton" data-dropdown-toggle="dropdownHover" data-dropdown-trigger="hover"
+    class="hidden md:inline-flex text-white navItems focus:outline-none font-medium rounded-lg text-sm px-5 py-2.5 text-center items-center"
+    type="button">
+    <img class="hover:underline rounded-full" src="https://cdn-icons-png.flaticon.com/512/7805/7805936.png" width="30" alt="">
+  </button>
+
+  <!-- Dropdown menu -->
+  <div id="dropdownHover" class="z-10 hidden bg-white divide-y mt-0 divide-gray-100 dark:bg-transparent">
+    <ul class="py-2 text-sm text-gray-700 dark:text-transparent" aria-labelledby="dropdownHoverButton">
+      <li>
+        <a href="#" class="text-center block px-2 py-1 dark:hover:bg-transparent dark:text-white font-extrabold">Cart</a>
+      </li>
+    </ul>
+  </div>
+
+  <!-- User -->
+  <button id="dropdownHoverButton2" data-dropdown-toggle="dropdownHover2" data-dropdown-trigger="hover"
+    class="hidden md:inline-flex text-white navItems focus:outline-none font-medium rounded-lg text-sm px-5 py-2.5 text-center items-center"
+    type="button">
+    <img class="hover:underline" src="https://static.vecteezy.com/system/resources/previews/019/879/186/non_2x/user-icon-on-transparent-background-free-png.png" width="44" alt="">
+  </button>
+
+  <!-- Dropdown menu -->
+  <div id="dropdownHover2" class="z-10 hidden bg-white divide-y mt-0 divide-gray-100 dark:bg-transparent">
+    <ul class="py-2 text-sm text-gray-700 dark:text-transparent" aria-labelledby="dropdownHoverButton2">
+      <li>
+        <a href="#" class="text-center block px-2 py-1 dark:hover:bg-transparent dark:text-white font-extrabold">Sign in</a>
+      </li>
+    </ul>
+  </div>
+
+  <!-- Gift -->
+  <button id="dropdownHoverButton3" data-dropdown-toggle="dropdownHover3" data-dropdown-trigger="hover"
+    class="hidden md:inline-flex text-white navItems focus:outline-none font-medium rounded-lg text-sm px-5 py-2.5 text-center items-center"
+    type="button">
+    <img class="rounded-full hover:underline" src="https://img.freepik.com/premium-vector/gift-box-silhouette-vector_1049360-1320.jpg" width="28" alt="">
+  </button>
+
+  <!-- Dropdown menu -->
+  <div id="dropdownHover3" class="z-10 hidden bg-white divide-y mt-0 divide-gray-100 dark:bg-transparent">
+    <ul class="py-2 text-sm text-gray-700 dark:text-transparent" aria-labelledby="dropdownHoverButton3">
+      <li>
+        <a href="#" class="text-center block px-2 py-1 dark:hover:bg-transparent dark:text-white font-extrabold">Gifts</a>
+      </li>
+    </ul>
+  </div>
+
+  <!-- Mobile hamburger menu (only visible on small screens) -->
+  <div class="text-center ">
+    <button class="text-white hover:bg-transparent text-sm px-5 dark:bg-transparent dark:hover:bg-transparent focus:outline-none dark:focus:bg-transparent"
+      type="button" data-drawer-target="drawer-disabled-backdrop" data-drawer-toggle="drawer-disabled-backdrop"
+      aria-controls="drawer-disabled-backdrop">
+      <svg class="w-6 h-6 dark:text-gray-50 hover:text-white hover:text-lg" aria-hidden="true"
+        xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
+        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+          stroke-width="2" d="M1 1h15M1 7h15M1 13h15" />
+      </svg>
+    </button>
+  </div>
+
+</div> </div>
       </div>
     </nav>
 
-    <!-- Secondary Navbar -->
-    <nav class="bg-gray-50 dark:bg-gray-700 border-b">
-      <div class="max-w-screen-xl px-4 py-3 mx-auto">
-        <div class="flex items-center justify-center">
-          <ul class="flex flex-row font-medium mt-0 space-x-8 rtl:space-x-reverse text-sm">
-            <li>
-              <a href="./index.html" class="text-gray-900 dark:text-white hover:underline" aria-current="page">Home</a>
-            </li>
-            <li>
-              <a href="./shop.html" class="text-gray-900 dark:text-white hover:underline">Product</a>
-            </li>
-            <li>
-              <a href="#" class="text-gray-900 dark:text-white hover:underline">About Us</a>
-            </li>
-            <li>
-              <a href="#" class="text-gray-900 dark:text-white hover:underline">Contact</a>
-            </li>
-          </ul>
-        </div>
+    <!-- Nav Links -->
+    <nav class="bg-gray-50 dark:dark:bg-gray-400">
+      <div class="max-w-screen-xl w-full mx-auto px-4 md:pb-3 pb-3 md:ml-15 py-1 ">
+        <ul class="flex justify-right gap-6 font-medium text-sm text-gray-900 dark:text-black  w-full">
+          <li ><a href="./index.html" class="hover:underline">Home</a></li>
+          <li ><a href="./shop.html" class="hover:underline">Products</a></li>
+          <li ><a href="#" class="hover:underline">About Us</a></li>
+          <li ><a href="./about.html#contact" class="hover:underline">Contact</a></li>
+        </ul>
       </div>
     </nav>
 
     <!-- Services Header -->
-   
-   <div class="pt-12 px-4 md:px-10">
-  <!-- Heading -->
-  <h1 class="text-center text-4xl md:text-5xl font-bold text-gray-800 mb-8">About</h1>
 
-  <!-- Grid Section -->
-  <div class="grid md:grid-cols-2 grid-cols-1 gap-8 items-center">
-    
-    <!-- Text Section -->
-    <div class="flex justify-center md:justify-center">
-      <p class="text-lg leading-relaxed text-gray-600 text-center md:text-left max-w-xl">
-        Track work across the enterprise through an open, collaborative platform. 
-        Link issues across Jira and ingest data from other software development tools, 
-        so your IT support and operations teams have richer contextual information 
-        to rapidly respond to requests, incidents, and changes.
-      </p>
-    </div>
+    <div class="pt-12 px-4 md:px-10">
+      <!-- Heading -->
+      <h1 class="text-center text-4xl md:text-5xl font-bold text-gray-800 mb-8">About</h1>
 
-    <!-- Video Section -->
-    <div class="flex justify-center">
-      <div class="w-full max-w-lg aspect-video rounded-xl overflow-hidden shadow-lg">
-        <iframe class="w-full h-full"
-          src="https://www.youtube.com/embed/LbB56Gn8JPU?si=c6efkLopFBVKoC4a" 
-          title="YouTube video player" 
-          frameborder="0" 
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-          referrerpolicy="strict-origin-when-cross-origin" 
-          allowfullscreen>
-        </iframe>
+      <!-- Grid Section -->
+      <div class="grid md:grid-cols-2 grid-cols-1 gap-8 items-center">
+
+        <!-- Text Section -->
+
+        <div class="flex justify-center md:justify-center">
+
+          <p class="text-lg leading-relaxed text-gray-600 text-center md:text-left max-w-xl text-justify">
+            Welcome to <b>CraftsyCorner</b>, a creative space where imagination takes shape.
+
+            We believe that art is not just something you see — it’s something you feel. That’s why every craft we
+            create is designed with love, passion, and attention to detail. From unique handmade pieces to elegant décor
+            and personalized gifts, our mission is to bring a touch of creativity and warmth into your everyday life. <br>
+
+Creativity & Passion – Each product is carefully crafted to inspire joy. <br>
+
+          
+
+
+
+
+          At CraftsyCorner, we’re more than just a craft store — we’re a community of creators, dreamers, and art lovers
+          who cherish the beauty of handmade work.
+
+          
+          </p>
+        </div>
+
+        <!-- Video Section -->
+        <div class="flex justify-center">
+          <div class="w-full max-w-lg aspect-video rounded-xl overflow-hidden shadow-lg">
+            <iframe class="w-full h-full" src="https://www.youtube.com/embed/LbB56Gn8JPU?si=c6efkLopFBVKoC4a"
+              title="YouTube video player" frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+            </iframe>
+          </div>
+        </div>
+
       </div>
     </div>
 
-  </div>
-</div>
+    <!-- Achievement -->
+    <!-- Achievements Section for Craft Selling Website -->
+    <section id="achievements">
+      <div class="w-full bg-white shadow-sm dark:bg-gray-800 dark:border-white">
+        <div class="p-4 bg-white md:p-8 dark:bg-white" role="tabpanel" aria-labelledby="stats-tab">
+          <dl
+            class="grid max-w-screen-xl grid-cols-2 gap-8 p-4 mx-auto text-gray-900 sm:grid-cols-3 xl:grid-cols-6 dark:text-dark sm:p-8">
 
-<!-- Achievement -->
-<!-- Achievements Section for Craft Selling Website -->
-<section id="achievements">
-  <div class="w-full bg-white shadow-sm dark:bg-gray-800 dark:border-white">
-    <div class="p-4 bg-white md:p-8 dark:bg-white" role="tabpanel" aria-labelledby="stats-tab">
-      <dl class="grid max-w-screen-xl grid-cols-2 gap-8 p-4 mx-auto text-gray-900 sm:grid-cols-3 xl:grid-cols-6 dark:text-dark sm:p-8">
-        
-        <div class="flex flex-col items-center justify-center">
-          <dt class="mb-2 text-3xl font-extrabold">10+</dt>
-          <dd class="text-gray-500 dark:text-gray-400 offcanva-p">Years of Crafting</dd>
+            <div class="flex flex-col items-center justify-center">
+              <dt class="mb-2 text-3xl font-extrabold">10+</dt>
+              <dd class="text-gray-500 dark:text-gray-400 offcanva-p">Years of Crafting</dd>
+            </div>
+
+            <div class="flex flex-col items-center justify-center">
+              <dt class="mb-2 text-3xl font-extrabold">5K+</dt>
+              <dd class="text-gray-500 dark:text-gray-400 offcanva-p">Handmade Products</dd>
+            </div>
+
+            <div class="flex flex-col items-center justify-center">
+              <dt class="mb-2 text-3xl font-extrabold">3K+</dt>
+              <dd class="text-gray-500 dark:text-gray-400 offcanva-p">Happy Customers</dd>
+            </div>
+
+            <div class="flex flex-col items-center justify-center">
+              <dt class="mb-2 text-3xl font-extrabold">4.8</dt>
+              <dd class="text-gray-500 dark:text-gray-400 offcanva-p">Average Rating</dd>
+            </div>
+
+            <div class="flex flex-col items-center justify-center">
+              <dt class="mb-2 text-3xl font-extrabold">50K+</dt>
+              <dd class="text-gray-500 dark:text-gray-400 offcanva-p">Craft Lovers Community</dd>
+            </div>
+
+            <div class="flex flex-col items-center justify-center">
+              <dt class="mb-2 text-3xl font-extrabold">100+</dt>
+              <dd class="text-gray-500 dark:text-gray-400 offcanva-p">Unique Designs</dd>
+            </div>
+
+          </dl>
         </div>
-        
-        <div class="flex flex-col items-center justify-center">
-          <dt class="mb-2 text-3xl font-extrabold">5K+</dt>
-          <dd class="text-gray-500 dark:text-gray-400 offcanva-p">Handmade Products</dd>
-        </div>
-        
-        <div class="flex flex-col items-center justify-center">
-          <dt class="mb-2 text-3xl font-extrabold">3K+</dt>
-          <dd class="text-gray-500 dark:text-gray-400 offcanva-p">Happy Customers</dd>
-        </div>
-        
-        <div class="flex flex-col items-center justify-center">
-          <dt class="mb-2 text-3xl font-extrabold">4.8</dt>
-          <dd class="text-gray-500 dark:text-gray-400 offcanva-p">Average Rating</dd>
-        </div>
-        
-        <div class="flex flex-col items-center justify-center">
-          <dt class="mb-2 text-3xl font-extrabold">50K+</dt>
-          <dd class="text-gray-500 dark:text-gray-400 offcanva-p">Craft Lovers Community</dd>
-        </div>
-        
-        <div class="flex flex-col items-center justify-center">
-          <dt class="mb-2 text-3xl font-extrabold">100+</dt>
-          <dd class="text-gray-500 dark:text-gray-400 offcanva-p">Unique Designs</dd>
-        </div>
-        
-      </dl>
-    </div>
-  </div>
-</section>
+      </div>
+    </section>
 
   </header>
-    
+  <hr>
+  <section class="py-12 ">
+    <div class="max-w-7xl mx-auto px-6">
+      <h2 class="text-3xl md:text-4xl font-bold text-center mb-10 text-gray-800"> Why Choose Us?</h2>
+
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+
+        <!-- Craft Hub -->
+        <div class="bg-white text-center ">
+          <img
+            src="https://itsybitsy.in/cdn/shop/files/Website_Icons-01_2e408608-7e11-4093-b5fd-aa06b7f9c853.jpg?v=1696663894&width=720"
+            alt="Craft Hub" class="mx-auto mb-4 w-20 h-20">
+          <h3 class="text-xl font-semibold text-gray-700">Craft Hub of Creativity</h3>
+          <p class="mt-2 text-gray-500">Your one-stop destination for premium handmade crafts and art supplies —
+            bringing imagination to life.</p>
+        </div>
+
+        <!-- Rural Women Employment -->
+        <div class="bg-white text-center ">
+          <img src="https://itsybitsy.in/cdn/shop/files/Website_Icons-02-N.jpg?v=1696664027&width=720"
+            alt="Rural Women Employment" class="mx-auto mb-4 w-20 h-20">
+          <h3 class="text-xl font-semibold text-gray-700">Empowering Rural Women</h3>
+          <p class="mt-2 text-gray-500">We support 3000+ rural women by providing sustainable employment through
+            crafting.</p>
+        </div>
+
+        <!-- Made in India -->
+        <div class="bg-white text-center ">
+          <img src="https://itsybitsy.in/cdn/shop/files/Website_Icons-03-n.jpg?v=1696664123&width=720"
+            alt="Made in India" class="mx-auto mb-4 w-20 h-20">
+          <h3 class="text-xl font-semibold text-gray-700">Made in India</h3>
+          <p class="mt-2 text-gray-500">Over 70% of our products are proudly crafted in India, blending tradition with
+            modern creativity.</p>
+        </div>
+
+        <!-- Trusted Manufacturers -->
+        <div class="bg-white text-center ">
+          <img src="https://itsybitsy.in/cdn/shop/files/Website_Icons-04n.jpg?v=1696665868&width=720"
+            alt="Manufacturers" class="mx-auto mb-4 w-20 h-20">
+          <h3 class="text-xl font-semibold text-gray-700">Trusted Manufacturers</h3>
+          <p class="mt-2 text-gray-500">High-quality & affordable handmade crafts — trusted by creators nationwide.</p>
+        </div>
+
+        <!-- Eco-Friendly Specialties -->
+        <div class="bg-white text-center ">
+          <img src="https://itsybitsy.in/cdn/shop/files/Website_Icons-05n.jpg?v=1696666517&width=720" alt="Eco-Friendly"
+            class="mx-auto mb-4 w-20 h-20">
+          <h3 class="text-xl font-semibold text-gray-700">Eco-Friendly Specialties</h3>
+          <p class="mt-2 text-gray-500">Handcrafted flowers made from recycled cotton paper — sustainable and beautiful.
+          </p>
+        </div>
+
+        <!-- Nationwide Presence -->
+        <div class="bg-white text-center ">
+          <img src="https://itsybitsy.in/cdn/shop/files/Website_Icons-06n.jpg?v=1696666570&width=720"
+            alt="Nationwide Presence" class="mx-auto mb-4 w-20 h-20">
+          <h3 class="text-xl font-semibold text-gray-700">Nationwide Presence</h3>
+          <p class="mt-2 text-gray-500">With 39 outlets across 17 cities + online store, we’re always close to your
+            creativity.</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Header -->
+  <section class="text-center py-12 bg-amber-100 shadow-md">
+    <h1 class="text-3xl md:text-4xl font-bold text-gray-800">📞 Contact Us</h1>
+    <p class="text-gray-600 mt-2">We’d love to hear from you</p>
+  </section>
+
+  <!-- Contact Info + Form -->
+  <section class="max-w-6xl mx-auto px-6 py-12 grid grid-cols-1 md:grid-cols-2 gap-10">
+
+    <!-- Contact Details -->
+    <div class="space-y-6">
+      <h2 class="text-2xl font-semibold text-gray-800">ITSY BITSY PVT LTD</h2>
+      <p class="text-gray-600">India’s trusted hub for premium art & craft supplies.</p>
+
+      <div class="space-y-3">
+        <p><strong>Email:</strong> <a href="mailto:info@itsybitsy.in"
+            class="text-amber-600 hover:underline">info@itsybitsy.in</a></p>
+        <p><strong>Phone:</strong> +91-9900061127 / +91-99458 43790</p>
+        <p><strong>Timings:</strong> 09:30 a.m. – 6:00 p.m. (Mon–Fri)</p>
+      </div>
+
+      <p class="text-sm text-gray-500 italic">
+        By clicking "Send", I agree to receive a call & message from Itsy Bitsy or its associates regarding my query.
+      </p>
+    </div>
+
+    <!-- Contact Form -->
+    <div class="bg-white p-6  shadow-md">
+      <form action="#" method="POST" class="space-y-4">
+        <div class="grid grid-cols-2 gap-3">
+
+          <input type="text" name="name" placeholder="Name"
+            class="w-full p-3 border  focus:outline-none focus:ring-2 focus:ring-amber-500">
+          <input type="email" name="email" placeholder="Email"
+            class="w-full p-3 border  focus:outline-none focus:ring-2 focus:ring-amber-500">
+
+
+        </div>
+        <textarea name="message" rows="4" placeholder="Your Message"
+          class="w-full p-3 border focus:outline-none focus:ring-2 focus:ring-amber-500"></textarea>
+
+        <button type="submit "
+          class="justify-center w-30 bg-amber-600 hover:bg-amber-700 text-white font-semibold p-3  shadow-md transition">
+          Send Message
+        </button>
+      </form>
+      <p class="text-xs text-gray-400 mt-3">This site is protected by hCaptcha and the hCaptcha Privacy Policy and Terms
+        of Service apply.</p>
+    </div>
+  </section>
+
+  <!-- Google Map -->
+  <section class="w-full md:h-80 h-40 px-16 mb-5">
+    <iframe class="w-full h-full border-0  shadow-md"
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3888.688830635155!2d77.5946!3d12.9716!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae1670f4b5d0c1%3A0xa4c9a7c63ad3db2!2sBengaluru%2C%20Karnataka%2C%20India!5e0!3m2!1sen!2sin!4v1677332223000!5m2!1sen!2sin"
+      allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+  </section>
+
+
+
+  <!-- Testimonial Card 3 -->
+  <div data-aos="fade-up">
+    <div class="bg-white dark:bg-gray-800 p-6 rounded-2xl shadow-md hover:shadow-lg transition">
+      <p class="text-gray-600 dark:text-gray-300  mb-4">
+        "Great customer service and unique handmade gifts. My friends loved them. Will buy again!"
+      </p>
+      <div class="flex items-center justify-center gap-3">
+        <img class="w-12 h-12 rounded-full border"
+          src="https://img.freepik.com/free-photo/close-up-portrait-professional-business-woman-smiling-outdoor_1391-4.jpg?semt=ais_hybrid"
+          alt="Customer 3">
+        <div class="text-left">
+          <h4 class="font-semibold text-gray-900 dark:text-white">Meera Iyer</h4>
+          <span class="text-sm text-gray-500">Kochi, India</span>
+          <div class="flex">
+            <svg class="w-3 h-3 text-yellow-300 me-1" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+              fill="currentColor" viewBox="0 0 22 20">
+              <path
+                d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z" />
+            </svg>
+            <svg class="w-3 h-3 text-yellow-300 me-1" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+              fill="currentColor" viewBox="0 0 22 20">
+              <path
+                d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z" />
+            </svg>
+            <svg class="w-3 h-3 text-yellow-300 me-1" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+              fill="currentColor" viewBox="0 0 22 20">
+              <path
+                d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z" />
+            </svg>
+            <svg class="w-3 h-3 text-yellow-300 me-1" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+              fill="currentColor" viewBox="0 0 22 20">
+              <path
+                d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z" />
+            </svg>
+            <svg class="w-3 h-3 text-yellow-300 me-1" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill=""
+              viewBox="0 0 22 20">
+              <path
+                d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z" />
+            </svg>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Footer -->
+  <footer class="bg-gray-100 dark:bg-gray-900  shadow-sm ">
+    <div class="w-full max-w-screen-xl mx-auto p-6 md:py-8">
+      <!-- Top Section -->
+      <div class="sm:flex sm:items-center sm:justify-between">
+        <!-- Logo + Name -->
+        <a href="/" class="flex items-center mb-4 sm:mb-0 space-x-3 rtl:space-x-reverse">
+          <img src="./Images/craft-logo.png" class="h-10 rounded-full" alt="Craftify Logo" />
+          <span class="self-center text-2xl font-semibold text-gray-700 dark:text-white">CraftsyCorner</span>
+        </a>
+
+        <!-- Footer Links -->
+        <ul
+          class="flex flex-wrap justify-between items-center mb-6 text-sm font-medium text-gray-600 dark:text-gray-400 sm:mb-0">
+          <li>
+            <a href="/about" class="hover:underline me-4 md:me-6">About Us</a>
+          </li>
+          <li>
+            <a href="/shop" class="hover:underline me-4 md:me-6">Shop</a>
+          </li>
+          <li>
+            <a href="/privacy" class="hover:underline me-4 md:me-6">Privacy Policy</a>
+          </li>
+          <li>
+            <a href="/contact" class="hover:underline">Contact</a>
+          </li>
+        </ul>
+      </div>
+
+      <!-- Divider -->
+      <hr class="my-6 border-gray-300 dark:border-gray-700 sm:mx-auto lg:my-8" />
+
+      <!-- Newsletter -->
+      <div class="text-center mb-6">
+        <h3 class="text-lg font-semibold text-gray-700 dark:text-white">Join Our Craft Community</h3>
+        <p class="text-sm text-gray-500 dark:text-gray-400 mb-4">Get exclusive offers & updates on new handmade
+          products.</p>
+        <form class="flex justify-center text-gray-200">
+          <input type="email" placeholder="Enter your email"
+            class="px-4 py-2 w-64 rounded-l-lg border border-gray-500 focus:outline-none focus:ring-1 focus:ring-gray-900" />
+          <button type="submit"
+            class="px-4 py-2 bg-slate-700 text-white rounded-r-lg hover:bg-slate-200 hover:text-black">Subscribe</button>
+        </form>
+      </div>
+
+      <!-- Bottom -->
+          <span class="block text-sm text-gray-500 sm:text-center dark:text-gray-400">© 2025 <a href="/" class="hover:underline">CraftsyCorner™</a>. All Rights Reserved.</span>
+
+    </div>
+  </footer>
+
 </body>
+
 </html>

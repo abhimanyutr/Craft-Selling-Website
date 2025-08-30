@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Craft Selling Website</title>
+    <title>CraftsyCorner</title>
     <!-- fontAwosome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.1.0/css/v4-shims.min.css"
         integrity="sha512-p++g4gkFY8DBqLItjIfuKJPFvTPqcg2FzOns2BNaltwoCOrXMqRIOqgWqWEvuqsj/3aVdgoEo2Y7X6SomTfUPA=="
@@ -18,100 +18,226 @@
 
 <body>
     <!-- Banner -->
-    <div class="bg-blue-700 md:h-150 sm:h-1/2 "
-        style="background-image: url(https://images.pexels.com/photos/7898409/pexels-photo-7898409.jpeg); background-size: cover;">
-        <!-- Navbar -->
-        <nav class=" bg-white border-gray-200 dark:bg-gray-600">
-            <div class="flex flex-wrap justify-between items-center mx-auto max-w-screen-xl p-3">
-                <a href="https://flowbite.com" class="flex items-center space-x-3 rtl:space-x-reverse">
-                    <img src="./Images/craft-logo.png" class="h-8 m-0 rounded-full" alt="Flowbite Logo" />
-                    <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white px-4">The Craft
-                        Corner</span>
-                </a>
-                <div class="flex items-center space-x-6 rtl:space-x-reverse">
-                    <a href="tel:5541251234" class="text-sm  text-gray-500 dark:text-white hover:underline">(555)
-                        412-1234</a>
-                    <a href="#" class="text-sm  text-blue-600 dark:text-blue-500 hover:underline">Login</a>
-                </div>
-            </div>
-        </nav>
-        <nav class=" bg-gray-50 dark:bg-gray-700">
-            <div class="max-w-screen-xl px-4 py-3 mx-auto">
-                <div class="flex items-center">
-                    <ul class="flex flex-row font-medium mt-0 space-x-8 rtl:space-x-reverse text-sm">
-                        <li>
-                            <a href="#" class="text-gray-900 dark:text-white hover:underline"
-                                aria-current="page">Home</a>
-                        </li>
-                        <li>
-                            <a href="./shop.html" class="text-gray-900 dark:text-white hover:underline">Product</a>
-                        </li>
-                        <li>
-                            <a href="#" class="text-gray-900 dark:text-white hover:underline">About Us</a>
-                        </li>
-                        <li>
-                            <a href="#" class="text-gray-900 dark:text-white hover:underline">Contact</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
-        <!-- Navbar Ends -->
-            <div class="md:pt-40 sm:pt-20 ">
-                <div data-aos="fade-right">
-                <h1
-                    class="mb-4 text-4xl font-extrabold leading-none tracking-tight text-gray-900 md:text-5xl lg:text-6xl dark:text-white px-16">
-                    Crafted with Love, Made for You</h1>
-                <p class="mb-6 text-lg font-normal text-gray-500 lg:text-xl sm:px-16 xl:px-16 dark:text-gray-400">
-                    Discover unique handmade creations that bring beauty, tradition, and artistry into your home.</p>
-                <div class="flex flex-col space-y-4 sm:flex-row sm:justify-right sm:space-y-0 sm:px-16 xl:px-16">
-                    <a href="#"
-                        class="inline-flex  py-2 px-6 text-base font-medium  text-white rounded-lg bg-lime-600 hover:bg-lime-500 focus:ring-4 focus:ring-lime-600 dark:focus:ring-lime-600 ">
-                        Contact Us
+    <div class=" z-40 relative bg-cover bg-center h-[600px] sm:h-[300px] md:h-[600px]" 
+     style="background-image: url('https://images.pexels.com/photos/7898409/pexels-photo-7898409.jpeg');">
 
-                    </a>
-                    <a href="#"
-                        class="inline-flex justify-center hover:text-gray-900 items-center py-2 px-5 sm:ms-4 text-base font-medium text-center text-white rounded-lg border border-white hover:bg-gray-100 focus:ring-4 focus:ring-gray-400 offcanva-p">
-                        Learn more
-                    </a>
+  <!-- Overlay -->
+  <div class="absolute inset-0 bg-black/40"></div>
 
-                </div>
-                <!-- Rating -->
+  <!-- Navbar -->
+  <header class="relative z-20">
+    <nav class="bg-white  dark:bg-transparent ">
+      <div class="flex justify-between items-center md:ml-15   max-w-screen-xl mx-auto p-4">
+        <!-- Logo -->
+        <a href="#" class="flex items-center space-x-3 ml-0">
+          <img src="./Images/craft-logo.png" class="h-10 w-10 rounded-full" alt="CraftsyCorner Logo">
+          <span class="text-2xl font-bold text-gray-800 dark:text-white">CraftsyCorner</span>
+        </a>
+        <!-- Right links -->
+        <div class="flex md:items-center items-end space-x-6">
 
-                <div class="flex items-center pl-11 sm:px-16 xl:px-16 pt-5">
-                    <svg class="w-4 h-4 text-yellow-300 me-1" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
-                        fill="currentColor" viewBox="0 0 22 20">
-                        <path
-                            d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z" />
-                    </svg>
-                    <svg class="w-4 h-4 text-yellow-300 me-1" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
-                        fill="currentColor" viewBox="0 0 22 20">
-                        <path
-                            d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z" />
-                    </svg>
-                    <svg class="w-4 h-4 text-yellow-300 me-1" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
-                        fill="currentColor" viewBox="0 0 22 20">
-                        <path
-                            d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z" />
-                    </svg>
-                    <svg class="w-4 h-4 text-yellow-300 me-1" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
-                        fill="currentColor" viewBox="0 0 22 20">
-                        <path
-                            d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z" />
-                    </svg>
-                    <svg class="w-4 h-4 text-yellow-300 me-1" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
-                        fill="currentColor" viewBox="0 0 22 20">
-                        <path
-                            d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z" />
-                    </svg>
-                    <p class="ms-1 md:text-lg text-sm font-extrabold text-gray-950 dark:text-white">4.8/5</p>
-                    <p class="ms-1 ms:text-lg text-sm font-extrabold text-gray-800 dark:text-white ">Rating</p>
+  <!-- Cart -->
+  <button id="dropdownHoverButton" data-dropdown-toggle="dropdownHover" data-dropdown-trigger="hover"
+    class="hidden md:inline-flex text-white navItems focus:outline-none font-medium rounded-lg text-sm px-5 py-2.5 text-center items-center"
+    type="button">
+    <img class="hover:underline rounded-full" src="https://cdn-icons-png.flaticon.com/512/7805/7805936.png" width="30" alt="">
+  </button>
+
+  <!-- Dropdown menu -->
+  <div id="dropdownHover" class="z-10 hidden bg-white divide-y mt-0 divide-gray-100 dark:bg-transparent">
+    <ul class="py-2 text-sm text-gray-700 dark:text-transparent" aria-labelledby="dropdownHoverButton">
+      <li>
+        <a href="#" class="text-center block px-2 py-1 dark:hover:bg-transparent dark:text-white font-extrabold">Cart</a>
+      </li>
+    </ul>
+  </div>
+
+  <!-- User -->
+  <button id="dropdownHoverButton2" data-dropdown-toggle="dropdownHover2" data-dropdown-trigger="hover"
+    class="hidden md:inline-flex text-white navItems focus:outline-none font-medium rounded-lg text-sm px-5 py-2.5 text-center items-center"
+    type="button">
+    <img class="hover:underline" src="https://static.vecteezy.com/system/resources/previews/019/879/186/non_2x/user-icon-on-transparent-background-free-png.png" width="44" alt="">
+  </button>
+
+  <!-- Dropdown menu -->
+  <div id="dropdownHover2" class="z-10 hidden bg-white divide-y mt-0 divide-gray-100 dark:bg-transparent">
+    <ul class="py-2 text-sm text-gray-700 dark:text-transparent" aria-labelledby="dropdownHoverButton2">
+      <li>
+        <a href="#" class="text-center block px-2 py-1 dark:hover:bg-transparent dark:text-white font-extrabold">Sign in</a>
+      </li>
+    </ul>
+  </div>
+
+  <!-- Gift -->
+  <button id="dropdownHoverButton3" data-dropdown-toggle="dropdownHover3" data-dropdown-trigger="hover"
+    class="hidden md:inline-flex text-white navItems focus:outline-none font-medium rounded-lg text-sm px-5 py-2.5 text-center items-center"
+    type="button">
+    <img class="rounded-full hover:underline" src="https://img.freepik.com/premium-vector/gift-box-silhouette-vector_1049360-1320.jpg" width="28" alt="">
+  </button>
+
+  <!-- Dropdown menu -->
+  <div id="dropdownHover3" class="z-10 hidden bg-white divide-y mt-0 divide-gray-100 dark:bg-transparent">
+    <ul class="py-2 text-sm text-gray-700 dark:text-transparent" aria-labelledby="dropdownHoverButton3">
+      <li>
+        <a href="#" class="text-center block px-2 py-1 dark:hover:bg-transparent dark:text-white font-extrabold">Gifts</a>
+      </li>
+    </ul>
+  </div>
+
+  <!-- Mobile hamburger menu (only visible on small screens) -->
+  <div class="text-center ">
+    <button class="text-white hover:bg-transparent text-sm px-5 dark:bg-transparent dark:hover:bg-transparent focus:outline-none dark:focus:bg-transparent"
+      type="button" data-drawer-target="drawer-disabled-backdrop" data-drawer-toggle="drawer-disabled-backdrop"
+      aria-controls="drawer-disabled-backdrop">
+      <svg class="w-6 h-6 dark:text-gray-800 hover:text-white hover:text-lg" aria-hidden="true"
+        xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
+        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+          stroke-width="2" d="M1 1h15M1 7h15M1 13h15" />
+      </svg>
+    </button>
+  </div>
+
 </div>
-                </div>
-                <!-- Rating-ends -->
-            </div>
-        </div>
+
+      </div>
+    </nav>
+
+    <!-- Nav Links -->
+    <nav class="bg-gray-50 dark:dark:bg-transparent ">
+      <div class="max-w-screen-xl mx-auto px-4 md:pb-3 pb-3 py-1 md:ml-15">
+        <ul class="flex flex-wrap gap-6 font-medium text-sm text-gray-900 dark:text-white">
+          <li><a href="#" class="hover:underline">Home</a></li>
+          <li><a href="./shop.html" class="hover:underline">Products</a></li>
+          <li><a href="#" class="hover:underline">About Us</a></li>
+          <li><a href="./about.html#contact" class="hover:underline">Contact</a></li>
+        </ul>
+        
+      </div>
+      
+    </nav>
+
+    
+  </header>
+
+<!-- offcanvas -->
+<!-- offcanvas -->
+<div id="drawer-disabled-backdrop" class="fixed top-0 left-0 z-40 h-screen p-4 overflow-y-auto transition-transform -translate-x-full bg-neutral-200  md:w-md md:dark:bg-lime-50" tabindex="-1" aria-labelledby="drawer-disabled-backdrop-label">
+    <span class="shadow-sm hover:dark:text-lime-300 ename self-center text-2xl font-semibold whitespace-nowrap dark:text-lime-500 p-0 mb-0 tracking-wider  font-normal">EliteMoments</span>
+    <h6 class="text-sm mt-0 pt-0 enamesub dark:text-lime-600">Event Management</h6>
+    <button type="button" data-drawer-hide="drawer-disabled-backdrop" aria-controls="drawer-disabled-backdrop" class="text-dark bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm w-8 h-8 absolute top-2.5 end-2.5 inline-flex items-center justify-center dark:hover:bg-lime-500 dark:hover:text-white" >
+      <svg class="w-3 h-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 14">
+         <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 6 6m0 0 6 6M7 7l6-6M7 7l-6 6"/>
+      </svg>
+      <span class="sr-only">Close menu</span>
+   </button>
+  <div class="py-4 overflow-y-auto">
+      <ul class="space-y-2 font-medium">
+         <li>
+            <p class="sm:text-sm md:text-sm text-justify offcanva-p">EliteMoments is your trusted partner in crafting unforgettable events across Kerala. From elegant weddings to vibrant birthdays and corporate gatherings, we specialize in turning your ideas into beautifully executed celebrations. With a passionate team and attention to every detail, EliteMoments ensures that each occasion becomes a cherished memory.</p>
+         </li>
+         <li>
+            <button type="button" class="flex items-center w-full p-2 text-base text-gray-900 md:dark:text-gray-900 transition duration-75 rounded-lg group hover:bg-gray-100 dark:text-white dark:hover:bg-white" aria-controls="dropdown-example" data-collapse-toggle="dropdown-example">
+                 
+                 <i class="fa-solid fa-phone"></i>
+                  <span class="flex-1 ms-3 text-left rtl:text-right whitespace-nowrap offcanva-p  md:dark:text-gray-900 ">+91-874-001-1011</span>
+                  
+            </button>
+            
+         </li>
+         <li>
+            <a href="#" class="flex items-center p-2 text-gray-900 rounded-lg dark:text-dark hover:bg-white dark:hover:bg-white group">
+               <i class="fa-solid fa-envelope"></i>
+               <span class="flex-1 md:ms-3 whitespace-nowrap offcanva-p md:dark:text-gray-900 dark:hover:bg-white">emomentseventmanagement@gmail.com</span>
+            </a>
+         </li>
+         <li><h1 class="md:text-3xl text-lime-400  dark:hover:text-lime-500 offcan-items">Venues</h1></li>
+         <li><h1 class="md:text-3xl text-lime-400 dark:hover:text-lime-500 offcan-items">Gallary</h1></li>
+         <li><h1 class="md:text-3xl text-lime-400 dark:hover:text-lime-500 offcan-items">Services</h1></li>
+         <li><h1 class="md:text-3xl text-lime-400 dark:hover:text-lime-500 offcan-items">Booking</h1></li>
+
+         <div class="md:flex justify-around md:my-10">
+         <li>
+            <a href="./login.html" class="flex items-center p-2 text-gray-900 rounded-lg dark:text-gray-800 hover:bg-gray-200 dark:hover:bg-lime-100 group">
+               <svg class="shrink-0 w-5 h-5 text-gray-500 transition duration-75 dark:text-gray-400 group-hover:text-gray-900 dark:group-hover:text-dark" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 18 16">
+                  <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 8h11m0 0L8 4m4 4-4 4m4-11h3a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2h-3"/>
+               </svg>
+               <span class="flex-1 ms-3 whitespace-nowrap">Log In</span>
+            </a>
+         </li>
+         <li>
+            <a href="./register.html" class="flex items-center p-2  text-gray-900 rounded-lg dark:text-gray-800 hover:bg-gray-100 dark:hover:bg-lime-100 group">
+               <svg class="shrink-0 w-5 h-5 text-gray-500 transition duration-75 dark:text-gray-400 group-hover:text-gray-900 dark:group-hover:text-dark" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
+                  <path d="M5 5V.13a2.96 2.96 0 0 0-1.293.749L.879 3.707A2.96 2.96 0 0 0 .13 5H5Z"/>
+                  <path d="M6.737 11.061a2.961 2.961 0 0 1 .81-1.515l6.117-6.116A4.839 4.839 0 0 1 16 2.141V2a1.97 1.97 0 0 0-1.933-2H7v5a2 2 0 0 1-2 2H0v11a1.969 1.969 0 0 0 1.933 2h12.134A1.97 1.97 0 0 0 16 18v-3.093l-1.546 1.546c-.413.413-.94.695-1.513.81l-3.4.679a2.947 2.947 0 0 1-1.85-.227 2.96 2.96 0 0 1-1.635-3.257l.681-3.397Z"/>
+                  <path d="M8.961 16a.93.93 0 0 0 .189-.019l3.4-.679a.961.961 0 0 0 .49-.263l6.118-6.117a2.884 2.884 0 0 0-4.079-4.078l-6.117 6.117a.96.96 0 0 0-.263.491l-.679 3.4A.961.961 0 0 0 8.961 16Zm7.477-9.8a.958.958 0 0 1 .68-.281.961.961 0 0 1 .682 1.644l-.315.315-1.36-1.36.313-.318Zm-5.911 5.911 4.236-4.236 1.359 1.359-4.236 4.237-1.7.339.341-1.699Z"/>
+               </svg>
+               <span class="flex-1 ms-3 whitespace-nowrap">Sign Up</span>
+            </a>
+         </li>
+         </div>
+
+         <div class="flex justify-around mt-10">
+         <li>
+            <a href="#" class="flex items-center text-2xl p-2 text-gray-900 rounded-lg dark:text-dark hover:bg-gray-100 dark:hover:bg-lime-100 group">
+               <i class="fa-brands fa-square-instagram"></i>
+               
+            </a>
+         </li>
+         <li>
+            <a href="#" class="flex items-center text-2xl p-2 text-gray-900 rounded-lg dark:text-dark hover:bg-gray-100 dark:hover:bg-lime-100 group">
+               <i class="fa-brands fa-facebook"></i>
+               
+            </a>
+         </li>
+         <li>
+            <a href="#" class="flex items-center text-2xl p-2 text-gray-900 rounded-lg dark:text-dark hover:bg-gray-100 dark:hover:bg-lime-100 group">
+               <i class="fa-brands fa-youtube"></i>
+              
+            </a>
+         </li>
+         </div>
+         
+      </ul>
+   </div>
+</div>
+
+
+
+  <!-- Hero Content -->
+  <div class="relative z-10 flex flex-col justify-center md:h-96 px-6 md:px-16 md:pt-40 text-white">
+    <h1 class="text-2xl md:text-6xl font-extrabold mb-4 mt-40 md:mt-10 ">
+      Crafted with Love, Made for You
+    </h1>
+    <p class="text-sm md:text-xl text-gray-200 max-w-2xl mb-6">
+      Discover unique handmade creations that bring beauty, tradition, and artistry into your home.
+    </p>
+    <div class="flex flex-col sm:flex-row gap-4">
+      <a href="#contact" 
+         class="md:px-6 px-3 py-2 bg-lime-600 hover:bg-lime-500 rounded-lg text-base font-semibold shadow-lg">
+         Contact Us
+      </a>
+      <a href="#about" 
+         class="px-6 py-2 border border-white hover:bg-white hover:text-gray-900 rounded-lg text-base font-semibold">
+         Learn More
+      </a>
     </div>
+
+    <!-- Rating -->
+    <div class="flex items-center gap-2 mt-6">
+      <!-- Stars -->
+      <div class="flex text-yellow-400">
+        <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 22 20"><path d="M20.9 7.6a1.5 1.5 0 0 0-1.2-1l-5-.7-2.3-4.6a1.5 1.5 0 0 0-2.8 0l-2.3 4.6-5 .7a1.5 1.5 0 0 0-.8 2.6l3.6 3.6-.9 5a1.5 1.5 0 0 0 2.2 1.6L11 17l4.5 2.4a1.5 1.5 0 0 0 2.2-1.6l-.9-5 3.6-3.6c.6-.6.3-1.6-.5-1.8Z"/></svg>
+        <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 22 20"><path d="M20.9 7.6a1.5 1.5 0 0 0-1.2-1l-5-.7-2.3-4.6a1.5 1.5 0 0 0-2.8 0l-2.3 4.6-5 .7a1.5 1.5 0 0 0-.8 2.6l3.6 3.6-.9 5a1.5 1.5 0 0 0 2.2 1.6L11 17l4.5 2.4a1.5 1.5 0 0 0 2.2-1.6l-.9-5 3.6-3.6c.6-.6.3-1.6-.5-1.8Z"/></svg>
+        <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 22 20"><path d="M20.9 7.6a1.5 1.5 0 0 0-1.2-1l-5-.7-2.3-4.6a1.5 1.5 0 0 0-2.8 0l-2.3 4.6-5 .7a1.5 1.5 0 0 0-.8 2.6l3.6 3.6-.9 5a1.5 1.5 0 0 0 2.2 1.6L11 17l4.5 2.4a1.5 1.5 0 0 0 2.2-1.6l-.9-5 3.6-3.6c.6-.6.3-1.6-.5-1.8Z"/></svg>
+        <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 22 20"><path d="M20.9 7.6a1.5 1.5 0 0 0-1.2-1l-5-.7-2.3-4.6a1.5 1.5 0 0 0-2.8 0l-2.3 4.6-5 .7a1.5 1.5 0 0 0-.8 2.6l3.6 3.6-.9 5a1.5 1.5 0 0 0 2.2 1.6L11 17l4.5 2.4a1.5 1.5 0 0 0 2.2-1.6l-.9-5 3.6-3.6c.6-.6.3-1.6-.5-1.8Z"/></svg>
+        <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 22 20"><path d="M20.9 7.6a1.5 1.5 0 0 0-1.2-1l-5-.7-2.3-4.6a1.5 1.5 0 0 0-2.8 0l-2.3 4.6-5 .7a1.5 1.5 0 0 0-.8 2.6l3.6 3.6-.9 5a1.5 1.5 0 0 0 2.2 1.6L11 17l4.5 2.4a1.5 1.5 0 0 0 2.2-1.6l-.9-5 3.6-3.6c.6-.6.3-1.6-.5-1.8Z"/></svg>
+      </div>
+      <p class="text-lg font-bold">4.8/5 Rating</p>
+    </div>
+  </div>
+</div>
+
+    
 
     <!-- Grid 1 -->
 
@@ -530,8 +656,7 @@
       <!-- Testimonial Card 3 -->
        <div data-aos="fade-up">  <div class="bg-white dark:bg-gray-800 p-6 rounded-2xl shadow-md hover:shadow-lg transition">
         <p class="text-gray-600 dark:text-gray-300  mb-4">
-          "Great customer service and unique handmade gifts. My friends loved them. Will buy again!"
-        </p>
+"Excellent customer service and beautiful, unique handmade gifts. My friends really loved them. Will surely buy again!"        </p>
         <div class="flex items-center justify-center gap-3">
           <img class="w-12 h-12 rounded-full border" src="https://img.freepik.com/free-photo/close-up-portrait-professional-business-woman-smiling-outdoor_1391-4.jpg?semt=ais_hybrid" alt="Customer 3">
           <div class="text-left">
@@ -580,8 +705,8 @@
     <div class="sm:flex sm:items-center sm:justify-between">
       <!-- Logo + Name -->
       <a href="/" class="flex items-center mb-4 sm:mb-0 space-x-3 rtl:space-x-reverse">
-        <img src="/images/logo.png" class="h-10" alt="Craftify Logo" />
-        <span class="self-center text-2xl font-semibold text-gray-700 dark:text-white">Craftify</span>
+        <img src="./Images/craft-logo.png" class="h-10" alt="Craftify Logo" />
+        <span class="self-center text-2xl font-semibold text-gray-700 dark:text-white">CraftsyCorner</span>
       </a>
 
       <!-- Footer Links -->
@@ -596,7 +721,7 @@
           <a href="/privacy" class="hover:underline me-4 md:me-6">Privacy Policy</a>
         </li>
         <li>
-          <a href="/contact" class="hover:underline">Contact</a>
+          <a href="./about.html#contact" class="hover:underline">Contact</a>
         </li>
       </ul>
     </div>
@@ -617,7 +742,7 @@
     </div>
 
     <!-- Bottom -->
-    <span class="block text-sm text-gray-500 sm:text-center dark:text-gray-400">© 2025 <a href="/" class="hover:underline">Craftify™</a>. All Rights Reserved.</span>
+    <span class="block text-sm text-gray-500 sm:text-center dark:text-gray-400">© 2025 <a href="/" class="hover:underline">CraftsyCorner™</a>. All Rights Reserved.</span>
   </div>
 </footer>
 
@@ -627,7 +752,8 @@
 
 
 
-
+    
+    <script src="https://unpkg.com/flowbite@1.6.5/dist/flowbite.min.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
         AOS.init();
