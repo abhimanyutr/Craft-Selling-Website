@@ -33,61 +33,30 @@
           <img src="./Images/craft-logo.png" class="h-10 w-10 rounded-full" alt="CraftsyCorner Logo">
           <span class="text-2xl font-bold text-gray-800 dark:text-white">CraftsyCorner</span>
         </a>
-        <!-- Right links -->
-        <div class="flex md:items-center items-end space-x-6">
+<!-- Right links -->
+<div class="nav-container flex md:items-center items-end space-x-6">
 
   <!-- Cart -->
   <button id="dropdownHoverButton" data-dropdown-toggle="dropdownHover" data-dropdown-trigger="hover"
-    class="hidden md:inline-flex text-white navItems focus:outline-none font-medium rounded-lg text-sm px-5 py-2.5 text-center items-center"
+    mytxt="Cart" class="hidden MYBTN md:inline-flex text-white navItems focus:outline-none font-medium rounded-lg text-sm px-5 py-2.5 text-center items-center"
     type="button">
     <img class="hover:underline rounded-full" src="https://cdn-icons-png.flaticon.com/512/7805/7805936.png" width="30" alt="">
   </button>
 
-  <!-- Dropdown menu -->
-  <div id="dropdownHover" class="z-10 hidden bg-white divide-y mt-0 divide-gray-100 dark:bg-transparent">
-    <ul class="py-2 text-sm text-gray-700 dark:text-transparent" aria-labelledby="dropdownHoverButton">
-      <li>
-        <a href="#" class="text-center block px-2 py-1 dark:hover:bg-transparent dark:text-white font-extrabold">Cart</a>
-      </li>
-    </ul>
-  </div>
-
-  <!-- User -->
-  <button id="dropdownHoverButton2" data-dropdown-toggle="dropdownHover2" data-dropdown-trigger="hover"
-    class="hidden md:inline-flex text-white navItems focus:outline-none font-medium rounded-lg text-sm px-5 py-2.5 text-center items-center"
-    type="button">
-    <img class="hover:underline" src="https://static.vecteezy.com/system/resources/previews/019/879/186/non_2x/user-icon-on-transparent-background-free-png.png" width="44" alt="">
-  </button>
-
-  <!-- Dropdown menu -->
-  <div id="dropdownHover2" class="z-10 hidden bg-white divide-y mt-0 divide-gray-100 dark:bg-transparent">
-    <ul class="py-2 text-sm text-gray-700 dark:text-transparent" aria-labelledby="dropdownHoverButton2">
-      <li>
-        <a href="#" class="text-center block px-2 py-1 dark:hover:bg-transparent dark:text-white font-extrabold">Sign in</a>
-      </li>
-    </ul>
-  </div>
-
   <!-- Gift -->
   <button id="dropdownHoverButton3" data-dropdown-toggle="dropdownHover3" data-dropdown-trigger="hover"
-    class="hidden md:inline-flex text-white navItems focus:outline-none font-medium rounded-lg text-sm px-5 py-2.5 text-center items-center"
+     mytxt="Gifts" class="hidden MYBTN md:inline-flex text-white navItems focus:outline-none font-medium rounded-lg text-sm px-5 py-2.5 text-center items-center"
     type="button">
     <img class="rounded-full hover:underline" src="https://img.freepik.com/premium-vector/gift-box-silhouette-vector_1049360-1320.jpg" width="28" alt="">
   </button>
 
-  <!-- Dropdown menu -->
-  <div id="dropdownHover3" class="z-10 hidden bg-white divide-y mt-0 divide-gray-100 dark:bg-transparent">
-    <ul class="py-2 text-sm text-gray-700 dark:text-transparent" aria-labelledby="dropdownHoverButton3">
-      <li>
-        <a href="#" class="text-center block px-2 py-1 dark:hover:bg-transparent dark:text-white font-extrabold">Gifts</a>
-      </li>
-    </ul>
-  </div>
-
+ <!-- User -->
+<a href="./login.html">  <button data-modal-target="authentication-modal" data-modal-toggle="authentication-modal" mytxt="Sign in" class="hidden MYBTN md:inline-flex text-white navItems focus:outline-none font-medium rounded-lg text-sm px-5 py-2.5 text-center items-center" type="button"> <img class="hover:underline" src="https://static.vecteezy.com/system/resources/previews/019/879/186/non_2x/user-icon-on-transparent-background-free-png.png" width="50" alt=""> </button> 
+</a>
   <!-- Mobile hamburger menu (only visible on small screens) -->
   <div class="text-center ">
     <button class="text-white hover:bg-transparent text-sm px-5 dark:bg-transparent dark:hover:bg-transparent focus:outline-none dark:focus:bg-transparent"
-      type="button" data-drawer-target="drawer-disabled-backdrop" data-drawer-toggle="drawer-disabled-backdrop"
+      type="button" data-drawer-target="drawer-craftsy" data-drawer-toggle="drawer-craftsy"
       aria-controls="drawer-disabled-backdrop">
       <svg class="w-6 h-6 dark:text-gray-800 hover:text-white hover:text-lg" aria-hidden="true"
         xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
@@ -108,98 +77,173 @@
         <ul class="flex flex-wrap gap-6 font-medium text-sm text-gray-900 dark:text-white">
           <li><a href="#" class="hover:underline">Home</a></li>
           <li><a href="./shop.html" class="hover:underline">Products</a></li>
-          <li><a href="#" class="hover:underline">About Us</a></li>
-          <li><a href="./about.html#contact" class="hover:underline">Contact</a></li>
+          <li><a href="./about.html" class="hover:underline">About Us</a></li>
+          <li><a href="./about.html" class="hover:underline">Contact</a></li>
         </ul>
         
       </div>
       
     </nav>
-
+  
     
   </header>
 
 <!-- offcanvas -->
-<!-- offcanvas -->
-<div id="drawer-disabled-backdrop" class="fixed top-0 left-0 z-40 h-screen p-4 overflow-y-auto transition-transform -translate-x-full bg-neutral-200  md:w-md md:dark:bg-lime-50" tabindex="-1" aria-labelledby="drawer-disabled-backdrop-label">
-    <span class="shadow-sm hover:dark:text-lime-300 ename self-center text-2xl font-semibold whitespace-nowrap dark:text-lime-500 p-0 mb-0 tracking-wider  font-normal">EliteMoments</span>
-    <h6 class="text-sm mt-0 pt-0 enamesub dark:text-lime-600">Event Management</h6>
-    <button type="button" data-drawer-hide="drawer-disabled-backdrop" aria-controls="drawer-disabled-backdrop" class="text-dark bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm w-8 h-8 absolute top-2.5 end-2.5 inline-flex items-center justify-center dark:hover:bg-lime-500 dark:hover:text-white" >
-      <svg class="w-3 h-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 14">
+<!-- Offcanvas Sidebar -->
+<div id="drawer-craftsy" class="fixed top-0 left-0 z-40 bg-gradient-to-r to-emerald-100 from-sky-100 h-screen p-4 overflow-y-auto transition-transform -translate-x-full bg-orange-50 md:w-md" tabindex="-1" aria-labelledby="drawer-craftsy-label">
+
+    <!-- Brand -->
+    <span class="self-center text-2xl font-extrabold tracking-wider text-orange-600">CraftsyCorner</span>
+    <h6 class="text-sm text-gray-600"></h6>
+
+    <!-- Close Button -->
+    <button type="button" data-drawer-hide="drawer-craftsy" aria-controls="drawer-craftsy"
+      class="text-dark bg-transparent hover:bg-orange-100 hover:text-gray-900 rounded-lg text-sm w-8 h-8 absolute top-2.5 end-2.5 flex items-center justify-center">
+      <svg class="w-3 h-3" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 14">
          <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 6 6m0 0 6 6M7 7l6-6M7 7l-6 6"/>
       </svg>
       <span class="sr-only">Close menu</span>
    </button>
-  <div class="py-4 overflow-y-auto">
-      <ul class="space-y-2 font-medium">
-         <li>
-            <p class="sm:text-sm md:text-sm text-justify offcanva-p">EliteMoments is your trusted partner in crafting unforgettable events across Kerala. From elegant weddings to vibrant birthdays and corporate gatherings, we specialize in turning your ideas into beautifully executed celebrations. With a passionate team and attention to every detail, EliteMoments ensures that each occasion becomes a cherished memory.</p>
-         </li>
-         <li>
-            <button type="button" class="flex items-center w-full p-2 text-base text-gray-900 md:dark:text-gray-900 transition duration-75 rounded-lg group hover:bg-gray-100 dark:text-white dark:hover:bg-white" aria-controls="dropdown-example" data-collapse-toggle="dropdown-example">
-                 
-                 <i class="fa-solid fa-phone"></i>
-                  <span class="flex-1 ms-3 text-left rtl:text-right whitespace-nowrap offcanva-p  md:dark:text-gray-900 ">+91-874-001-1011</span>
-                  
-            </button>
-            
-         </li>
-         <li>
-            <a href="#" class="flex items-center p-2 text-gray-900 rounded-lg dark:text-dark hover:bg-white dark:hover:bg-white group">
-               <i class="fa-solid fa-envelope"></i>
-               <span class="flex-1 md:ms-3 whitespace-nowrap offcanva-p md:dark:text-gray-900 dark:hover:bg-white">emomentseventmanagement@gmail.com</span>
-            </a>
-         </li>
-         <li><h1 class="md:text-3xl text-lime-400  dark:hover:text-lime-500 offcan-items">Venues</h1></li>
-         <li><h1 class="md:text-3xl text-lime-400 dark:hover:text-lime-500 offcan-items">Gallary</h1></li>
-         <li><h1 class="md:text-3xl text-lime-400 dark:hover:text-lime-500 offcan-items">Services</h1></li>
-         <li><h1 class="md:text-3xl text-lime-400 dark:hover:text-lime-500 offcan-items">Booking</h1></li>
 
-         <div class="md:flex justify-around md:my-10">
-         <li>
-            <a href="./login.html" class="flex items-center p-2 text-gray-900 rounded-lg dark:text-gray-800 hover:bg-gray-200 dark:hover:bg-lime-100 group">
-               <svg class="shrink-0 w-5 h-5 text-gray-500 transition duration-75 dark:text-gray-400 group-hover:text-gray-900 dark:group-hover:text-dark" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 18 16">
-                  <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 8h11m0 0L8 4m4 4-4 4m4-11h3a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2h-3"/>
-               </svg>
-               <span class="flex-1 ms-3 whitespace-nowrap">Log In</span>
-            </a>
-         </li>
-         <li>
-            <a href="./register.html" class="flex items-center p-2  text-gray-900 rounded-lg dark:text-gray-800 hover:bg-gray-100 dark:hover:bg-lime-100 group">
-               <svg class="shrink-0 w-5 h-5 text-gray-500 transition duration-75 dark:text-gray-400 group-hover:text-gray-900 dark:group-hover:text-dark" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
-                  <path d="M5 5V.13a2.96 2.96 0 0 0-1.293.749L.879 3.707A2.96 2.96 0 0 0 .13 5H5Z"/>
-                  <path d="M6.737 11.061a2.961 2.961 0 0 1 .81-1.515l6.117-6.116A4.839 4.839 0 0 1 16 2.141V2a1.97 1.97 0 0 0-1.933-2H7v5a2 2 0 0 1-2 2H0v11a1.969 1.969 0 0 0 1.933 2h12.134A1.97 1.97 0 0 0 16 18v-3.093l-1.546 1.546c-.413.413-.94.695-1.513.81l-3.4.679a2.947 2.947 0 0 1-1.85-.227 2.96 2.96 0 0 1-1.635-3.257l.681-3.397Z"/>
-                  <path d="M8.961 16a.93.93 0 0 0 .189-.019l3.4-.679a.961.961 0 0 0 .49-.263l6.118-6.117a2.884 2.884 0 0 0-4.079-4.078l-6.117 6.117a.96.96 0 0 0-.263.491l-.679 3.4A.961.961 0 0 0 8.961 16Zm7.477-9.8a.958.958 0 0 1 .68-.281.961.961 0 0 1 .682 1.644l-.315.315-1.36-1.36.313-.318Zm-5.911 5.911 4.236-4.236 1.359 1.359-4.236 4.237-1.7.339.341-1.699Z"/>
-               </svg>
-               <span class="flex-1 ms-3 whitespace-nowrap">Sign Up</span>
-            </a>
-         </li>
-         </div>
+   <!-- Body -->
+   <div class="py-4 overflow-y-auto">
+      <ul class="space-y-4 font-medium text-center">
 
-         <div class="flex justify-around mt-10">
+         <!-- About -->
          <li>
-            <a href="#" class="flex items-center text-2xl p-2 text-gray-900 rounded-lg dark:text-dark hover:bg-gray-100 dark:hover:bg-lime-100 group">
-               <i class="fa-brands fa-square-instagram"></i>
-               
-            </a>
+            <p class="text-sm text-justify text-gray-700">
+              Welcome to <span class="font-semibold text-orange-600">CraftsyCorner</span>, your one-stop shop for unique, handmade crafts.  
+              From elegant home décor to personalized gifts, every piece is designed with creativity and care.  
+              Support artisans and bring art into your everyday life. 🌿
+            </p>
          </li>
-         <li>
-            <a href="#" class="flex items-center text-2xl p-2 text-gray-900 rounded-lg dark:text-dark hover:bg-gray-100 dark:hover:bg-lime-100 group">
-               <i class="fa-brands fa-facebook"></i>
-               
-            </a>
+
+         <!-- Contact -->
+         <li class="flex items-center space-x-2">
+            <i class="fa-solid fa-phone text-orange-600"></i>
+            <span class="text-gray-700">+91-99000 61127</span>
          </li>
-         <li>
-            <a href="#" class="flex items-center text-2xl p-2 text-gray-900 rounded-lg dark:text-dark hover:bg-gray-100 dark:hover:bg-lime-100 group">
-               <i class="fa-brands fa-youtube"></i>
-              
-            </a>
+         <li class="flex items-center space-x-2">
+            <i class="fa-solid fa-envelope text-orange-600"></i>
+            <span class="text-gray-700">info@craftsycorner.in</span>
          </li>
-         </div>
+        
+
          
+
+
+         <!-- Navigation -->
+         
+
+         <!-- Login / Signup -->
+         <div class="md:flex justify-around md:my-8">
+            <li>
+               <a href="./login.html" class="flex items-center p-2 text-gray-800 rounded-lg hover:bg-orange-100 group">
+                  <svg class="w-5 h-5 text-gray-500 group-hover:text-orange-600" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 18 16">
+                     <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 8h11m0 0L8 4m4 4-4 4m4-11h3a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2h-3"/>
+                  </svg>
+                  <span class="ms-2">Log In</span>
+               </a>
+            </li>
+            <li>
+               <a href="./register.html" class="flex items-center p-2 text-gray-800 rounded-lg hover:bg-orange-100 group">
+                  <svg class="w-5 h-5 text-gray-500 group-hover:text-orange-600" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
+                     <path d="M5 5V.13a2.96 2.96 0 0 0-1.293.749L.879 3.707A2.96 2.96 0 0 0 .13 5H5Z"/>
+                     <path d="M6.737 11.061a2.961 2.961 0 0 1 .81-1.515l6.117-6.116A4.839 4.839 0 0 1 16 2.141V2a1.97 1.97 0 0 0-1.933-2H7v5a2 2 0 0 1-2 2H0v11a1.969 1.969 0 0 0 1.933 2h12.134A1.97 1.97 0 0 0 16 18v-3.093l-1.546 1.546c-.413.413-.94.695-1.513.81l-3.4.679a2.947 2.947 0 0 1-1.85-.227 2.96 2.96 0 0 1-1.635-3.257l.681-3.397Z"/>
+                  </svg>
+                  <span class="ms-2">Sign Up</span>
+               </a>
+            </li>
+
+            
+            
+         </div>
+  
+
+          <!-- Rating -->
+           <div class="flex text-justify">
+            <div class="mb-4 md:mb-5 mt-3 text-left text-justify">
+    <h3 class="text-2xl  md:font-bold text-green-700 mb-2 text-center">Top Rated Products</h3>
+    <p class="text-gray-600 max-w-xl mx-auto md:mb-4 text-center ">
+      Customers love this product for its quality, durability, and value for money. 
+        It’s one of the highest-rated items in our store and a top choice for frequent buyers.
+      
+    </p>
+   <!-- Rating -->
+
+<div class="flex justify-center -space-x-4 rtl:space-x-reverse pt-5 items-center ">
+                <img class="w-10 h-10 border border-white rounded-full dark:border-gray-800"
+                    src="https://images.pexels.com/photos/30029366/pexels-photo-30029366.jpeg?cs=srgb&dl=pexels-mlkbnl-30029366.jpg&fm=jpg"
+                    alt="">
+                <img class="w-10 h-10 border border-white rounded-full dark:border-gray-800"
+                    src="https://lirp.cdn-website.com/846c4f9c/dms3rep/multi/opt/GettyImages-522549708-1920w.jpg"
+                    alt="">
+                <img class="w-10 h-10 border border-white rounded-full dark:border-gray-800"
+                    src="https://s1.r29static.com/bin/entry/62d/0,383,3011,1581/x,80/2159517/your-complete-guide-to-the-2159517.jpg"
+                    alt="">
+                <a class="flex items-center justify-center w-10 h-10 text-xs font-medium text-white bg-gray-950 border border-white rounded-full hover:bg-gray-800 dark:border-gray-800"
+                    href="#">+99</a>
+                <!-- Rating -->
+
+
+                <div class="flex items-center pl-5 ">
+                    <svg class="w-4 h-4 text-yellow-300 me-1" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                        fill="currentColor" viewBox="0 0 22 20">
+                        <path
+                            d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z" />
+                    </svg>
+                    <svg class="w-4 h-4 text-yellow-300 me-1" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                        fill="currentColor" viewBox="0 0 22 20">
+                        <path
+                            d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z" />
+                    </svg>
+                    <svg class="w-4 h-4 text-yellow-300 me-1" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                        fill="currentColor" viewBox="0 0 22 20">
+                        <path
+                            d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z" />
+                    </svg>
+                    <svg class="w-4 h-4 text-yellow-300 me-1" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                        fill="currentColor" viewBox="0 0 22 20">
+                        <path
+                            d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z" />
+                    </svg>
+                    <svg class="w-4 h-4 text-yellow-300 me-1" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                        fill="currentColor" viewBox="0 0 22 20">
+                        <path
+                            d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z" />
+                    </svg>
+                     <p class="text-lg font-bold">4.8/5 Rating</p>
+                </div>
+
+
+            </div>
+<h2 class="text-lg text-gray-400 text-center font-semibold mt-6">Connect With Us</h2>
+  <div class="flex md:justify-around justify-center space-x-6 mt-3">
+    
+    <a href="https://www.instagram.com" target="_blank" class="hover:scale-110 transition">
+      <img src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png" alt="Instagram" class="w-5 h-5">
+    </a>
+    <a href="https://www.youtube.com" target="_blank" class="hover:scale-110 transition">
+      <img src="https://cdn-icons-png.flaticon.com/512/1384/1384060.png" alt="YouTube" class="w-6 h-6">
+    </a>
+    <a href="https://www.facebook.com" target="_blank" class="hover:scale-110 transition">
+      <img src="https://cdn-icons-png.flaticon.com/512/733/733547.png" alt="Facebook" class="w-5 h-5">
+    </a>
+  </div>
+    </div>
+           </div>
+    
+         <!-- Social Media -->
+         <!-- <div class="flex justify-around mt-10 text-2xl text-black">
+            <li><i class="fa-brands fa-instagram"></i></li>
+            <li><a href="#" class="text-gray-700 hover:text-orange-600"><i class="fa-brands fa-facebook"></i></a></li>
+            <li><a href="#" class="text-gray-700 hover:text-orange-600"><i class="fa-brands fa-youtube"></i></a></li>
+         </div> -->
+
       </ul>
    </div>
 </div>
+
 
 
 

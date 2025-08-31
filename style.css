@@ -5,3 +5,32 @@
     justify-content: end;
   }
 }
+
+.nav-container{
+
+}
+
+.nav-container .MYBTN::before{
+  content: attr(mytxt);
+  position: absolute;
+  background-color: rgba(255, 254, 254, 0);
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+  font-weight: bolder;
+  border-radius: 100px;
+  padding-left: 2px;
+  transform: translateZ(-39px) rotate(25deg);
+  transition: 200ms ease;
+  opacity: 0;
+  text-shadow: 0px 1px 1px black;
+
+}
+
+
+
+.nav-container .MYBTN:hover::before{
+  transform: translateY(-25px) rotate(0);
+  opacity: 1;
+  
+}
+
