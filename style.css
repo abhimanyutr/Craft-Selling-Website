@@ -10,6 +10,14 @@
 
 }
 
+.navitems{
+   font-family: "Jost", sans-serif;
+}
+.headfont{
+  font-family: "Poller One", sans-serif;
+  
+}
+
 .nav-container .MYBTN::before{
   content: attr(mytxt);
   position: absolute;
