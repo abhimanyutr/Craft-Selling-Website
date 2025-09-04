@@ -9,6 +9,9 @@
 .nav-container{
 
 }
+.bannerhead{
+   font-family: "EB Garamond", serif;
+}
 
 .navitems{
    font-family: "Jost", sans-serif;
@@ -34,6 +37,9 @@
 
 }
 
+.subheads{
+    font-family: "Poller One", sans-serif;
+}
 
 
 .nav-container .MYBTN:hover::before{
@@ -41,4 +47,5 @@
   opacity: 1;
   
 }
+
 
